@@ -462,11 +462,11 @@ namespace Giny.World.Managers.Entities.Characters
         }
         public void DebugHighlightCells(Color color, IEnumerable<CellRecord> cells)
         {
-            // Client.Send(new DebugHighlightCellsMessage(color.ToArgb(), cells.Select(x => x.Id).ToArray()));
+            Client.Send(new DebugHighlightCellsMessage(color.ToArgb(), cells.Select(x => x.Id).ToArray()));
         }
         public void DebugClearHighlightCells()
         {
-            // Client.Send(new DebugClearHighlightCellsMessage());
+            Client.Send(new DebugClearHighlightCellsMessage());
         }
         public void CreateContext(GameContextEnum context)
         {
