@@ -62,6 +62,7 @@ namespace Giny.ORM.IO
 
                         if (!m_reader.HasRows)
                         {
+                            this.m_reader.Close();
                             return null;
                         }
                         var obj = new object[this.Properties.Length];
