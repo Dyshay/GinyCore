@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightResumeMessage : GameFightSpectateMessage  
-    { 
-        public new const ushort Id = 6953;
+{     public class GameFightResumeMessage : GameFightSpectateMessage  
+    {         public new const ushort Id = 7286;
         public override ushort MessageId => Id;
 
         public GameFightSpellCooldown[] spellCooldowns;
@@ -82,11 +80,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

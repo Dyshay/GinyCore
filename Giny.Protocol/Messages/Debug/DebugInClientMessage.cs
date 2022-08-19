@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class DebugInClientMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2158;
+{     public class DebugInClientMessage : NetworkMessage  
+    {         public  const ushort Id = 1039;
         public override ushort MessageId => Id;
 
         public byte level;
@@ -42,11 +40,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

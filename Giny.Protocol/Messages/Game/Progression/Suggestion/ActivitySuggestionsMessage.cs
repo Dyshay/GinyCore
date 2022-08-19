@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ActivitySuggestionsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8161;
+{     public class ActivitySuggestionsMessage : NetworkMessage  
+    {         public  const ushort Id = 509;
         public override ushort MessageId => Id;
 
         public short[] lockedActivitiesIds;
@@ -83,11 +81,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

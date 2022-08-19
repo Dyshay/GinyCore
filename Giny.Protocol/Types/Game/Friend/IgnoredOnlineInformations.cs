@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class IgnoredOnlineInformations : IgnoredInformations  
-    { 
-        public new const ushort Id = 6999;
+{     public class IgnoredOnlineInformations : IgnoredInformations  
+    {         public new const ushort Id = 6708;
         public override ushort TypeId => Id;
 
         public long playerId;
@@ -62,11 +60,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

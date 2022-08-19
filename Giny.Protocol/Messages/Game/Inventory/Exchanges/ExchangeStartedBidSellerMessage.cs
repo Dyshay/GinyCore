@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeStartedBidSellerMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2021;
+{     public class ExchangeStartedBidSellerMessage : NetworkMessage  
+    {         public  const ushort Id = 1699;
         public override ushort MessageId => Id;
 
         public SellerBuyerDescriptor sellerDescriptor;
@@ -51,11 +49,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

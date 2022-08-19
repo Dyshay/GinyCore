@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class KnownZaapListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1272;
+{     public class KnownZaapListMessage : NetworkMessage  
+    {         public  const ushort Id = 2756;
         public override ushort MessageId => Id;
 
         public double[] destinations;
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

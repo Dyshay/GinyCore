@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class IdentifiedEntityDispositionInformations : EntityDispositionInformations  
-    { 
-        public new const ushort Id = 4549;
+{     public class IdentifiedEntityDispositionInformations : EntityDispositionInformations  
+    {         public new const ushort Id = 9329;
         public override ushort TypeId => Id;
 
         public double id;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

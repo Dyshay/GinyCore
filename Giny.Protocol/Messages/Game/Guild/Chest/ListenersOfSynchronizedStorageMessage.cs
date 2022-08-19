@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ListenersOfSynchronizedStorageMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8019;
+{     public class ListenersOfSynchronizedStorageMessage : NetworkMessage  
+    {         public  const ushort Id = 9830;
         public override ushort MessageId => Id;
 
         public string[] players;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class TaxCollectorWaitingForHelpInformations : TaxCollectorComplementaryInformations  
-    { 
-        public new const ushort Id = 3393;
+{     public class TaxCollectorWaitingForHelpInformations : TaxCollectorComplementaryInformations  
+    {         public new const ushort Id = 74;
         public override ushort TypeId => Id;
 
         public ProtectedEntityWaitingForHelpInfo waitingForHelpInfo;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

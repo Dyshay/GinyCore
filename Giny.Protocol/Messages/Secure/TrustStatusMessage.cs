@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class TrustStatusMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1101;
+{     public class TrustStatusMessage : NetworkMessage  
+    {         public  const ushort Id = 2996;
         public override ushort MessageId => Id;
 
         public bool trusted;
@@ -40,11 +38,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

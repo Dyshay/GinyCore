@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class SkillActionDescriptionTimed : SkillActionDescription  
-    { 
-        public new const ushort Id = 687;
+{     public class SkillActionDescriptionTimed : SkillActionDescription  
+    {         public new const ushort Id = 9835;
         public override ushort TypeId => Id;
 
         public byte time;
@@ -44,11 +42,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

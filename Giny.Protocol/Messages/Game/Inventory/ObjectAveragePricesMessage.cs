@@ -6,13 +6,11 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ObjectAveragePricesMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2074;
+{     public class ObjectAveragePricesMessage : NetworkMessage  
+    {         public  const ushort Id = 1712;
         public override ushort MessageId => Id;
 
-        public short[] ids;
+        public int[] ids;
         public long[] avgPrices;
 
         public ObjectAveragePricesMessage()
@@ -33,7 +31,7 @@ namespace Giny.Protocol.Messages
                     throw new System.Exception("Forbidden value (" + ids[_i1] + ") on element 1 (starting at 1) of ids.");
                 }
 
-                writer.WriteVarShort((short)ids[_i1]);
+                writer.WriteVarInt((int)ids[_i1]);
             }
 
             writer.WriteShort((short)avgPrices.Length);
@@ -53,16 +51,16 @@ namespace Giny.Protocol.Messages
             uint _val1 = 0;
             double _val2 = double.NaN;
             uint _idsLen = (uint)reader.ReadUShort();
-            ids = new short[_idsLen];
+            ids = new int[_idsLen];
             for (uint _i1 = 0;_i1 < _idsLen;_i1++)
             {
-                _val1 = (uint)reader.ReadVarUhShort();
+                _val1 = (uint)reader.ReadVarUhInt();
                 if (_val1 < 0)
                 {
                     throw new System.Exception("Forbidden value (" + _val1 + ") on elements of ids.");
                 }
 
-                ids[_i1] = (short)_val1;
+                ids[_i1] = (int)_val1;
             }
 
             uint _avgPricesLen = (uint)reader.ReadUShort();
@@ -83,11 +81,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

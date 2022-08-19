@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AbstractGameActionWithAckMessage : AbstractGameActionMessage  
-    { 
-        public new const ushort Id = 8218;
+{     public class AbstractGameActionWithAckMessage : AbstractGameActionMessage  
+    {         public new const ushort Id = 3046;
         public override ushort MessageId => Id;
 
         public short waitAckId;
@@ -37,11 +35,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

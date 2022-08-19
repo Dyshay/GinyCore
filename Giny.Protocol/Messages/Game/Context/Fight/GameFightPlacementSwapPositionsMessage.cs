@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightPlacementSwapPositionsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8732;
+{     public class GameFightPlacementSwapPositionsMessage : NetworkMessage  
+    {         public  const ushort Id = 121;
         public override ushort MessageId => Id;
 
         public IdentifiedEntityDispositionInformations[] dispositions;
@@ -42,11 +40,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ActivitySuggestionsRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3475;
+{     public class ActivitySuggestionsRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 7975;
         public override ushort MessageId => Id;
 
         public short minLevel;
@@ -99,11 +97,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

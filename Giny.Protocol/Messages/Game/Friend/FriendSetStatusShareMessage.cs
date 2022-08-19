@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class FriendSetStatusShareMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9293;
+{     public class FriendSetStatusShareMessage : NetworkMessage  
+    {         public  const ushort Id = 5953;
         public override ushort MessageId => Id;
 
         public bool share;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

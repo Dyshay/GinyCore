@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MimicryObjectEraseRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1063;
+{     public class MimicryObjectEraseRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 5170;
         public override ushort MessageId => Id;
 
         public int hostUID;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

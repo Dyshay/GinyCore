@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class JobMultiCraftAvailableSkillsMessage : JobAllowMultiCraftRequestMessage  
-    { 
-        public new const ushort Id = 5866;
+{     public class JobMultiCraftAvailableSkillsMessage : JobAllowMultiCraftRequestMessage  
+    {         public new const ushort Id = 832;
         public override ushort MessageId => Id;
 
         public long playerId;
@@ -73,11 +71,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

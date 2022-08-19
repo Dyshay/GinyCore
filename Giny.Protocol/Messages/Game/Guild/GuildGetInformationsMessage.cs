@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildGetInformationsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5912;
+{     public class GuildGetInformationsMessage : NetworkMessage  
+    {         public  const ushort Id = 3524;
         public override ushort MessageId => Id;
 
         public byte infoType;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AchievementAlmostFinishedDetailedListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 133;
+{     public class AchievementAlmostFinishedDetailedListMessage : NetworkMessage  
+    {         public  const ushort Id = 9630;
         public override ushort MessageId => Id;
 
         public Achievement[] almostFinishedAchievements;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

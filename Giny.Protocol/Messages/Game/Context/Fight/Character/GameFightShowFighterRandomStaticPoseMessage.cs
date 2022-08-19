@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightShowFighterRandomStaticPoseMessage : GameFightShowFighterMessage  
-    { 
-        public new const ushort Id = 3166;
+{     public class GameFightShowFighterRandomStaticPoseMessage : GameFightShowFighterMessage  
+    {         public new const ushort Id = 4154;
         public override ushort MessageId => Id;
 
 
@@ -32,11 +30,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AllianceModificationValidMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2712;
+{     public class AllianceModificationValidMessage : NetworkMessage  
+    {         public  const ushort Id = 7283;
         public override ushort MessageId => Id;
 
         public string allianceName;
@@ -42,11 +40,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

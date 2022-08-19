@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class BreachReward  
-    { 
-        public const ushort Id = 1476;
+{     public class BreachReward  
+    {         public const ushort Id = 8396;
         public virtual ushort TypeId => Id;
 
         public int id;
@@ -85,11 +83,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

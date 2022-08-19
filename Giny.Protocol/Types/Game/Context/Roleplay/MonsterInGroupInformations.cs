@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class MonsterInGroupInformations : MonsterInGroupLightInformations  
-    { 
-        public new const ushort Id = 8585;
+{     public class MonsterInGroupInformations : MonsterInGroupLightInformations  
+    {         public new const ushort Id = 8757;
         public override ushort TypeId => Id;
 
         public EntityLook look;
@@ -37,11 +35,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

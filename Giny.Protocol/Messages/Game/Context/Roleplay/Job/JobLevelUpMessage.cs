@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class JobLevelUpMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3922;
+{     public class JobLevelUpMessage : NetworkMessage  
+    {         public  const ushort Id = 8490;
         public override ushort MessageId => Id;
 
         public byte newLevel;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

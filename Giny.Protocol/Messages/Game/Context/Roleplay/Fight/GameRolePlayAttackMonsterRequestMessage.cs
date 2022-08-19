@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameRolePlayAttackMonsterRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6826;
+{     public class GameRolePlayAttackMonsterRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 6682;
         public override ushort MessageId => Id;
 
         public double monsterGroupId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class WatchQuestStepInfoMessage : QuestStepInfoMessage  
-    { 
-        public new const ushort Id = 1802;
+{     public class WatchQuestStepInfoMessage : QuestStepInfoMessage  
+    {         public new const ushort Id = 7787;
         public override ushort MessageId => Id;
 
         public long playerId;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

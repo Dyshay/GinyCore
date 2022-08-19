@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChallengeTargetsListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1506;
+{     public class ChallengeTargetsListMessage : NetworkMessage  
+    {         public  const ushort Id = 3156;
         public override ushort MessageId => Id;
 
         public double[] targetIds;
@@ -83,11 +81,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class DungeonKeyRingUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6572;
+{     public class DungeonKeyRingUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 2060;
         public override ushort MessageId => Id;
 
         public short dungeonId;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

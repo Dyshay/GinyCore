@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ClientKeyMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 16;
+{     public class ClientKeyMessage : NetworkMessage  
+    {         public  const ushort Id = 729;
         public override ushort MessageId => Id;
 
         public string key;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

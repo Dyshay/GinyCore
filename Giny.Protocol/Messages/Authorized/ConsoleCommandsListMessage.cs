@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ConsoleCommandsListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6227;
+{     public class ConsoleCommandsListMessage : NetworkMessage  
+    {         public  const ushort Id = 2203;
         public override ushort MessageId => Id;
 
         public string[] aliases;
@@ -80,11 +78,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

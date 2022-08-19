@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeStartOkRecycleTradeMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6635;
+{     public class ExchangeStartOkRecycleTradeMessage : NetworkMessage  
+    {         public  const ushort Id = 868;
         public override ushort MessageId => Id;
 
         public short percentToPrism;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

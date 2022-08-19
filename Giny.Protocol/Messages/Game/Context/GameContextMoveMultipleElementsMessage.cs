@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameContextMoveMultipleElementsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5560;
+{     public class GameContextMoveMultipleElementsMessage : NetworkMessage  
+    {         public  const ushort Id = 7991;
         public override ushort MessageId => Id;
 
         public EntityMovementInformations[] movements;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

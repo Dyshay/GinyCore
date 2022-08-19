@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AlliancePrismInformation : PrismInformation  
-    { 
-        public new const ushort Id = 766;
+{     public class AlliancePrismInformation : PrismInformation  
+    {         public new const ushort Id = 5203;
         public override ushort TypeId => Id;
 
         public AllianceInformations alliance;
@@ -39,11 +37,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

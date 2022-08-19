@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameRolePlayPrismInformations : GameRolePlayActorInformations  
-    { 
-        public new const ushort Id = 882;
+{     public class GameRolePlayPrismInformations : GameRolePlayActorInformations  
+    {         public new const ushort Id = 3779;
         public override ushort TypeId => Id;
 
         public PrismInformation prism;
@@ -39,11 +37,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

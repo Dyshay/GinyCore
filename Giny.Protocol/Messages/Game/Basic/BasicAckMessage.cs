@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BasicAckMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8655;
+{     public class BasicAckMessage : NetworkMessage  
+    {         public  const ushort Id = 202;
         public override ushort MessageId => Id;
 
         public int seq;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

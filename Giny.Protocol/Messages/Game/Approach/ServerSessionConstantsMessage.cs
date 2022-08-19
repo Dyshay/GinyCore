@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ServerSessionConstantsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8249;
+{     public class ServerSessionConstantsMessage : NetworkMessage  
+    {         public  const ushort Id = 7927;
         public override ushort MessageId => Id;
 
         public ServerSessionConstant[] variables;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

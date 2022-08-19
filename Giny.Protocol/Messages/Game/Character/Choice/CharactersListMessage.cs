@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CharactersListMessage : BasicCharactersListMessage  
-    { 
-        public new const ushort Id = 7382;
+{     public class CharactersListMessage : BasicCharactersListMessage  
+    {         public new const ushort Id = 9418;
         public override ushort MessageId => Id;
 
         public bool hasStartupActions;
@@ -36,11 +34,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

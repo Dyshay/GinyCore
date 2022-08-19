@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class StartupActionAddObject  
-    { 
-        public const ushort Id = 6129;
+{     public class StartupActionAddObject  
+    {         public const ushort Id = 4737;
         public virtual ushort TypeId => Id;
 
         public int uid;
@@ -16,11 +14,12 @@ namespace Giny.Protocol.Types
         public string descUrl;
         public string pictureUrl;
         public ObjectItemInformationWithQuantity[] items;
+        public int type;
 
         public StartupActionAddObject()
         {
         }
-        public StartupActionAddObject(int uid,string title,string text,string descUrl,string pictureUrl,ObjectItemInformationWithQuantity[] items)
+        public StartupActionAddObject(int uid,string title,string text,string descUrl,string pictureUrl,ObjectItemInformationWithQuantity[] items,int type)
         {
             this.uid = uid;
             this.title = title;
@@ -28,6 +27,7 @@ namespace Giny.Protocol.Types
             this.descUrl = descUrl;
             this.pictureUrl = pictureUrl;
             this.items = items;
+            this.type = type;
         }
         public virtual void Serialize(IDataWriter writer)
         {
@@ -47,6 +47,7 @@ namespace Giny.Protocol.Types
                 (items[_i6] as ObjectItemInformationWithQuantity).Serialize(writer);
             }
 
+            writer.WriteVarInt((int)type);
         }
         public virtual void Deserialize(IDataReader reader)
         {
@@ -69,16 +70,16 @@ namespace Giny.Protocol.Types
                 items[_i6] = _item6;
             }
 
+            type = (int)reader.ReadVarUhInt();
+            if (type < 0)
+            {
+                throw new System.Exception("Forbidden value (" + type + ") on element of StartupActionAddObject.type.");
+            }
+
         }
 
 
     }
 }
-
-
-
-
-
-
 
 

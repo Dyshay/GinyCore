@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class EnterHavenBagRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 180;
+{     public class EnterHavenBagRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 3961;
         public override ushort MessageId => Id;
 
         public long havenBagOwner;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

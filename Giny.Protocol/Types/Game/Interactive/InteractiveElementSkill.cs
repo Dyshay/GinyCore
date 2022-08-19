@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class InteractiveElementSkill  
-    { 
-        public const ushort Id = 4754;
+{     public class InteractiveElementSkill  
+    {         public const ushort Id = 7215;
         public virtual ushort TypeId => Id;
 
         public int skillId;
@@ -55,11 +53,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

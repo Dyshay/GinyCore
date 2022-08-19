@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameRefreshMonsterBoostsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8657;
+{     public class GameRefreshMonsterBoostsMessage : NetworkMessage  
+    {         public  const ushort Id = 1219;
         public override ushort MessageId => Id;
 
         public MonsterBoosts[] monsterBoosts;
@@ -63,11 +61,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

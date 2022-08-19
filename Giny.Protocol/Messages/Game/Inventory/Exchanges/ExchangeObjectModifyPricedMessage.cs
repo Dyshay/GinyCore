@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeObjectModifyPricedMessage : ExchangeObjectMovePricedMessage  
-    { 
-        public new const ushort Id = 6429;
+{     public class ExchangeObjectModifyPricedMessage : ExchangeObjectMovePricedMessage  
+    {         public new const ushort Id = 6806;
         public override ushort MessageId => Id;
 
 
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

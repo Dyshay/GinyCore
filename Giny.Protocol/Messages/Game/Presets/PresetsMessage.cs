@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PresetsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6378;
+{     public class PresetsMessage : NetworkMessage  
+    {         public  const ushort Id = 3806;
         public override ushort MessageId => Id;
 
         public Preset[] presets;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

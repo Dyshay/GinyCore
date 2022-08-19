@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PrismFightJoinLeaveRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8516;
+{     public class PrismFightJoinLeaveRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 7988;
         public override ushort MessageId => Id;
 
         public short subAreaId;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

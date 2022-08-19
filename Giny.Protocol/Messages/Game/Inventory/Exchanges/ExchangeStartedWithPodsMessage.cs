@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeStartedWithPodsMessage : ExchangeStartedMessage  
-    { 
-        public new const ushort Id = 5367;
+{     public class ExchangeStartedWithPodsMessage : ExchangeStartedMessage  
+    {         public new const ushort Id = 1007;
         public override ushort MessageId => Id;
 
         public double firstCharacterId;
@@ -116,11 +114,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

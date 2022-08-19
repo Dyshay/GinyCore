@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class StartupActionFinishedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 193;
+{     public class StartupActionFinishedMessage : NetworkMessage  
+    {         public  const ushort Id = 1694;
         public override ushort MessageId => Id;
 
         public bool success;
@@ -54,11 +52,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

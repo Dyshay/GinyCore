@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class DebugHighlightCellsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7356;
+{     public class DebugHighlightCellsMessage : NetworkMessage  
+    {         public  const ushort Id = 7229;
         public override ushort MessageId => Id;
 
         public double color;
@@ -70,11 +68,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class LifePointsRegenBeginMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2365;
+{     public class LifePointsRegenBeginMessage : NetworkMessage  
+    {         public  const ushort Id = 2914;
         public override ushort MessageId => Id;
 
         public byte regenRate;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightSpectateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6763;
+{     public class GameFightSpectateMessage : NetworkMessage  
+    {         public  const ushort Id = 8642;
         public override ushort MessageId => Id;
 
         public FightDispellableEffectExtendedInformations[] effects;
@@ -125,11 +123,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

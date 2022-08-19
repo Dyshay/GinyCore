@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class RefreshCharacterStatsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8208;
+{     public class RefreshCharacterStatsMessage : NetworkMessage  
+    {         public  const ushort Id = 3387;
         public override ushort MessageId => Id;
 
         public double fighterId;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

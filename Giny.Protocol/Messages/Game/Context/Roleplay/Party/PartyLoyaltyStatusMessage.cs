@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PartyLoyaltyStatusMessage : AbstractPartyMessage  
-    { 
-        public new const ushort Id = 9291;
+{     public class PartyLoyaltyStatusMessage : AbstractPartyMessage  
+    {         public new const ushort Id = 9886;
         public override ushort MessageId => Id;
 
         public bool loyal;
@@ -36,11 +34,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

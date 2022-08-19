@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ExtendedLockedBreachBranch : ExtendedBreachBranch  
-    { 
-        public new const ushort Id = 3173;
+{     public class ExtendedLockedBreachBranch : ExtendedBreachBranch  
+    {         public new const ushort Id = 9433;
         public override ushort TypeId => Id;
 
         public int unlockPrice;
@@ -53,11 +51,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

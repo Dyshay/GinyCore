@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PartyEntityBaseInformation  
-    { 
-        public const ushort Id = 8549;
+{     public class PartyEntityBaseInformation  
+    {         public const ushort Id = 3556;
         public virtual ushort TypeId => Id;
 
         public byte indexId;
@@ -60,11 +58,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

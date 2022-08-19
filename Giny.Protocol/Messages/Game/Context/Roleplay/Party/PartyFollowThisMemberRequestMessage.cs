@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PartyFollowThisMemberRequestMessage : PartyFollowMemberRequestMessage  
-    { 
-        public new const ushort Id = 2208;
+{     public class PartyFollowThisMemberRequestMessage : PartyFollowMemberRequestMessage  
+    {         public new const ushort Id = 3084;
         public override ushort MessageId => Id;
 
         public bool enabled;
@@ -37,11 +35,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

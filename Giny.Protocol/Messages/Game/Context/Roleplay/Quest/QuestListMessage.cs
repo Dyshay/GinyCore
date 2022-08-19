@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class QuestListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4672;
+{     public class QuestListMessage : NetworkMessage  
+    {         public  const ushort Id = 9399;
         public override ushort MessageId => Id;
 
         public short[] finishedQuestsIds;
@@ -130,11 +128,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

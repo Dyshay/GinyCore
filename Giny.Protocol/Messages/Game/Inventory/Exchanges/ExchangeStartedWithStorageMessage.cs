@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeStartedWithStorageMessage : ExchangeStartedMessage  
-    { 
-        public new const ushort Id = 4535;
+{     public class ExchangeStartedWithStorageMessage : ExchangeStartedMessage  
+    {         public new const ushort Id = 6900;
         public override ushort MessageId => Id;
 
         public int storageMaxSlot;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

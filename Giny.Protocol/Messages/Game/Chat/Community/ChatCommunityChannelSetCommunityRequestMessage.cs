@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChatCommunityChannelSetCommunityRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4907;
+{     public class ChatCommunityChannelSetCommunityRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 539;
         public override ushort MessageId => Id;
 
         public short communityId;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

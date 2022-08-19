@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BreachGameFightEndMessage : GameFightEndMessage  
-    { 
-        public new const ushort Id = 1483;
+{     public class BreachGameFightEndMessage : GameFightEndMessage  
+    {         public new const ushort Id = 6359;
         public override ushort MessageId => Id;
 
         public int budget;
@@ -40,11 +38,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameFightMutantInformations : GameFightFighterNamedInformations  
-    { 
-        public new const ushort Id = 1606;
+{     public class GameFightMutantInformations : GameFightFighterNamedInformations  
+    {         public new const ushort Id = 147;
         public override ushort TypeId => Id;
 
         public byte powerLevel;
@@ -55,11 +53,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

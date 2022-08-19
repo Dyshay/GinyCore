@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameRolePlayNpcQuestFlag  
-    { 
-        public const ushort Id = 3057;
+{     public class GameRolePlayNpcQuestFlag  
+    {         public const ushort Id = 6915;
         public virtual ushort TypeId => Id;
 
         public short[] questsToValidId;
@@ -81,11 +79,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

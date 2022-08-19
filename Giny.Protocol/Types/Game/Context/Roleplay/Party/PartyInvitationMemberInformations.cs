@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PartyInvitationMemberInformations : CharacterBaseInformations  
-    { 
-        public new const ushort Id = 3864;
+{     public class PartyInvitationMemberInformations : CharacterBaseInformations  
+    {         public new const ushort Id = 1262;
         public override ushort TypeId => Id;
 
         public short worldX;
@@ -108,11 +106,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

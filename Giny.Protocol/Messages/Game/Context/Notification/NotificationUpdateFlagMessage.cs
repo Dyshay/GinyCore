@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class NotificationUpdateFlagMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4857;
+{     public class NotificationUpdateFlagMessage : NetworkMessage  
+    {         public  const ushort Id = 1229;
         public override ushort MessageId => Id;
 
         public short index;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

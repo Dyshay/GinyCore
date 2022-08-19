@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameFightFighterInformations : GameContextActorInformations  
-    { 
-        public new const ushort Id = 8525;
+{     public class GameFightFighterInformations : GameContextActorInformations  
+    {         public new const ushort Id = 9960;
         public override ushort TypeId => Id;
 
         public GameContextBasicSpawnInformation spawnInfo;
@@ -85,11 +83,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

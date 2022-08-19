@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MountHarnessColorsUpdateRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8550;
+{     public class MountHarnessColorsUpdateRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 928;
         public override ushort MessageId => Id;
 
         public bool useHarnessColors;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

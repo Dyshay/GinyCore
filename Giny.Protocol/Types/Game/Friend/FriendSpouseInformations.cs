@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FriendSpouseInformations  
-    { 
-        public const ushort Id = 9223;
+{     public class FriendSpouseInformations  
+    {         public const ushort Id = 6176;
         public virtual ushort TypeId => Id;
 
         public int spouseAccountId;
@@ -95,11 +93,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

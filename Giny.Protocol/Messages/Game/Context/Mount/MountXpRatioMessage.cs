@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MountXpRatioMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6028;
+{     public class MountXpRatioMessage : NetworkMessage  
+    {         public  const ushort Id = 294;
         public override ushort MessageId => Id;
 
         public byte ratio;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

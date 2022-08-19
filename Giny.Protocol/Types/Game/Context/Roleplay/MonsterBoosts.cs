@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class MonsterBoosts  
-    { 
-        public const ushort Id = 183;
+{     public class MonsterBoosts  
+    {         public const ushort Id = 6739;
         public virtual ushort TypeId => Id;
 
         public int id;
@@ -69,11 +67,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

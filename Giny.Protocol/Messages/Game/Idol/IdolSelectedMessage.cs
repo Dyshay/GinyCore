@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class IdolSelectedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2306;
+{     public class IdolSelectedMessage : NetworkMessage  
+    {         public  const ushort Id = 1368;
         public override ushort MessageId => Id;
 
         public short idolId;
@@ -54,11 +52,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

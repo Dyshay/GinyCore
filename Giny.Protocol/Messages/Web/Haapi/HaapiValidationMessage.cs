@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class HaapiValidationMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1415;
+{     public class HaapiValidationMessage : NetworkMessage  
+    {         public  const ushort Id = 9230;
         public override ushort MessageId => Id;
 
         public byte action;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

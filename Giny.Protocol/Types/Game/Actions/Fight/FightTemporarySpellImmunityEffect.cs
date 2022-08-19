@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightTemporarySpellImmunityEffect : AbstractFightDispellableEffect  
-    { 
-        public new const ushort Id = 1925;
+{     public class FightTemporarySpellImmunityEffect : AbstractFightDispellableEffect  
+    {         public new const ushort Id = 7192;
         public override ushort TypeId => Id;
 
         public int immuneSpellId;
@@ -40,11 +38,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

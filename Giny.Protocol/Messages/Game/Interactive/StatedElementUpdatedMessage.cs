@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class StatedElementUpdatedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2678;
+{     public class StatedElementUpdatedMessage : NetworkMessage  
+    {         public  const ushort Id = 1591;
         public override ushort MessageId => Id;
 
         public StatedElement statedElement;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

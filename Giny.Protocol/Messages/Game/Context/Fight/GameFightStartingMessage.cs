@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightStartingMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1407;
+{     public class GameFightStartingMessage : NetworkMessage  
+    {         public  const ushort Id = 1557;
         public override ushort MessageId => Id;
 
         public byte fightType;
@@ -17,17 +15,19 @@ namespace Giny.Protocol.Messages
         public double attackerId;
         public double defenderId;
         public bool containsBoss;
+        public int[] monsters;
 
         public GameFightStartingMessage()
         {
         }
-        public GameFightStartingMessage(byte fightType,short fightId,double attackerId,double defenderId,bool containsBoss)
+        public GameFightStartingMessage(byte fightType,short fightId,double attackerId,double defenderId,bool containsBoss,int[] monsters)
         {
             this.fightType = fightType;
             this.fightId = fightId;
             this.attackerId = attackerId;
             this.defenderId = defenderId;
             this.containsBoss = containsBoss;
+            this.monsters = monsters;
         }
         public override void Serialize(IDataWriter writer)
         {
@@ -51,9 +51,16 @@ namespace Giny.Protocol.Messages
 
             writer.WriteDouble((double)defenderId);
             writer.WriteBoolean((bool)containsBoss);
+            writer.WriteShort((short)monsters.Length);
+            for (uint _i6 = 0;_i6 < monsters.Length;_i6++)
+            {
+                writer.WriteInt((int)monsters[_i6]);
+            }
+
         }
         public override void Deserialize(IDataReader reader)
         {
+            int _val6 = 0;
             fightType = (byte)reader.ReadByte();
             if (fightType < 0)
             {
@@ -79,16 +86,18 @@ namespace Giny.Protocol.Messages
             }
 
             containsBoss = (bool)reader.ReadBoolean();
+            uint _monstersLen = (uint)reader.ReadUShort();
+            monsters = new int[_monstersLen];
+            for (uint _i6 = 0;_i6 < _monstersLen;_i6++)
+            {
+                _val6 = (int)reader.ReadInt();
+                monsters[_i6] = (int)_val6;
+            }
+
         }
 
 
     }
 }
-
-
-
-
-
-
 
 

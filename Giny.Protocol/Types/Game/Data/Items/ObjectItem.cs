@@ -4,14 +4,12 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ObjectItem : Item  
-    { 
-        public new const ushort Id = 8568;
+{     public class ObjectItem : Item  
+    {         public new const ushort Id = 5968;
         public override ushort TypeId => Id;
 
         public short position;
-        public short objectGID;
+        public int objectGID;
         public ObjectEffect[] effects;
         public int objectUID;
         public int quantity;
@@ -19,7 +17,7 @@ namespace Giny.Protocol.Types
         public ObjectItem()
         {
         }
-        public ObjectItem(short position,short objectGID,ObjectEffect[] effects,int objectUID,int quantity)
+        public ObjectItem(short position,int objectGID,ObjectEffect[] effects,int objectUID,int quantity)
         {
             this.position = position;
             this.objectGID = objectGID;
@@ -36,7 +34,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element objectGID.");
             }
 
-            writer.WriteVarShort((short)objectGID);
+            writer.WriteVarInt((int)objectGID);
             writer.WriteShort((short)effects.Length);
             for (uint _i3 = 0;_i3 < effects.Length;_i3++)
             {
@@ -68,7 +66,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + position + ") on element of ObjectItem.position.");
             }
 
-            objectGID = (short)reader.ReadVarUhShort();
+            objectGID = (int)reader.ReadVarUhInt();
             if (objectGID < 0)
             {
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element of ObjectItem.objectGID.");
@@ -100,11 +98,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

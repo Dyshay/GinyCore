@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChatClientMultiWithObjectMessage : ChatClientMultiMessage  
-    { 
-        public new const ushort Id = 4323;
+{     public class ChatClientMultiWithObjectMessage : ChatClientMultiMessage  
+    {         public new const ushort Id = 5169;
         public override ushort MessageId => Id;
 
         public ObjectItem[] objects;
@@ -50,11 +48,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

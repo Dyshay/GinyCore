@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PaddockBuyResultMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3573;
+{     public class PaddockBuyResultMessage : NetworkMessage  
+    {         public  const ushort Id = 855;
         public override ushort MessageId => Id;
 
         public double paddockId;
@@ -61,11 +59,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

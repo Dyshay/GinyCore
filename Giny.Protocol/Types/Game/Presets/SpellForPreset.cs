@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class SpellForPreset  
-    { 
-        public const ushort Id = 3545;
+{     public class SpellForPreset  
+    {         public const ushort Id = 8020;
         public virtual ushort TypeId => Id;
 
         public short spellId;
@@ -58,11 +56,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

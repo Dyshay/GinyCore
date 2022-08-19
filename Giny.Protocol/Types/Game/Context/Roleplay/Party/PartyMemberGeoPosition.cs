@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PartyMemberGeoPosition  
-    { 
-        public const ushort Id = 6539;
+{     public class PartyMemberGeoPosition  
+    {         public const ushort Id = 4447;
         public virtual ushort TypeId => Id;
 
         public int memberId;
@@ -97,11 +95,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

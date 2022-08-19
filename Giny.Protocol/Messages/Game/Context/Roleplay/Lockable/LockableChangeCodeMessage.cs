@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class LockableChangeCodeMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1788;
+{     public class LockableChangeCodeMessage : NetworkMessage  
+    {         public  const ushort Id = 1644;
         public override ushort MessageId => Id;
 
         public string code;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

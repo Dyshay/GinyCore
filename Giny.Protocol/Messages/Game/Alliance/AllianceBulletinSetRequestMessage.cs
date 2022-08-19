@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AllianceBulletinSetRequestMessage : SocialNoticeSetRequestMessage  
-    { 
-        public new const ushort Id = 8339;
+{     public class AllianceBulletinSetRequestMessage : SocialNoticeSetRequestMessage  
+    {         public new const ushort Id = 5381;
         public override ushort MessageId => Id;
 
         public string content;
@@ -39,11 +37,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

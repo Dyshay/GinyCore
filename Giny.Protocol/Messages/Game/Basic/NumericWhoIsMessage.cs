@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class NumericWhoIsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7063;
+{     public class NumericWhoIsMessage : NetworkMessage  
+    {         public  const ushort Id = 4575;
         public override ushort MessageId => Id;
 
         public long playerId;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

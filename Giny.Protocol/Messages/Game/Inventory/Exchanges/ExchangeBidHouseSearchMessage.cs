@@ -6,39 +6,37 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeBidHouseSearchMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6174;
+{     public class ExchangeBidHouseSearchMessage : NetworkMessage  
+    {         public  const ushort Id = 4791;
         public override ushort MessageId => Id;
 
-        public short genId;
+        public int objectGID;
         public bool follow;
 
         public ExchangeBidHouseSearchMessage()
         {
         }
-        public ExchangeBidHouseSearchMessage(short genId,bool follow)
+        public ExchangeBidHouseSearchMessage(int objectGID,bool follow)
         {
-            this.genId = genId;
+            this.objectGID = objectGID;
             this.follow = follow;
         }
         public override void Serialize(IDataWriter writer)
         {
-            if (genId < 0)
+            if (objectGID < 0)
             {
-                throw new System.Exception("Forbidden value (" + genId + ") on element genId.");
+                throw new System.Exception("Forbidden value (" + objectGID + ") on element objectGID.");
             }
 
-            writer.WriteVarShort((short)genId);
+            writer.WriteVarInt((int)objectGID);
             writer.WriteBoolean((bool)follow);
         }
         public override void Deserialize(IDataReader reader)
         {
-            genId = (short)reader.ReadVarUhShort();
-            if (genId < 0)
+            objectGID = (int)reader.ReadVarUhInt();
+            if (objectGID < 0)
             {
-                throw new System.Exception("Forbidden value (" + genId + ") on element of ExchangeBidHouseSearchMessage.genId.");
+                throw new System.Exception("Forbidden value (" + objectGID + ") on element of ExchangeBidHouseSearchMessage.objectGID.");
             }
 
             follow = (bool)reader.ReadBoolean();
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class BufferInformation  
-    { 
-        public const ushort Id = 6358;
+{     public class BufferInformation  
+    {         public const ushort Id = 2740;
         public virtual ushort TypeId => Id;
 
         public long id;
@@ -55,11 +53,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BreachBranchesMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2636;
+{     public class BreachBranchesMessage : NetworkMessage  
+    {         public  const ushort Id = 1189;
         public override ushort MessageId => Id;
 
         public ExtendedBreachBranch[] branches;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

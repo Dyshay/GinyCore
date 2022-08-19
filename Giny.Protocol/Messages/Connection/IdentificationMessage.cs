@@ -7,10 +7,8 @@ using Giny.Protocol.Enums;
 using Version = Giny.Protocol.Types.Version;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class IdentificationMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7907;
+{     public class IdentificationMessage : NetworkMessage  
+    {         public  const ushort Id = 8381;
         public override ushort MessageId => Id;
 
         public Version version;
@@ -116,11 +114,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

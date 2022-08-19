@@ -7,10 +7,8 @@ using Giny.Protocol.Enums;
 using Version = Giny.Protocol.Types.Version;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class IdentificationAccountForceMessage : IdentificationMessage  
-    { 
-        public new const ushort Id = 247;
+{     public class IdentificationAccountForceMessage : IdentificationMessage  
+    {         public new const ushort Id = 8300;
         public override ushort MessageId => Id;
 
         public string forcerAccountLogin;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

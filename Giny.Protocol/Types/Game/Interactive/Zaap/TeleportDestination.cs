@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class TeleportDestination  
-    { 
-        public const ushort Id = 6958;
+{     public class TeleportDestination  
+    {         public const ushort Id = 2734;
         public virtual ushort TypeId => Id;
 
         public byte type;
@@ -92,11 +90,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ObjectItemQuantityPriceDateEffects : ObjectItemGenericQuantity  
-    { 
-        public new const ushort Id = 7034;
+{     public class ObjectItemQuantityPriceDateEffects : ObjectItemGenericQuantity  
+    {         public new const ushort Id = 4391;
         public override ushort TypeId => Id;
 
         public long price;
@@ -17,7 +15,7 @@ namespace Giny.Protocol.Types
         public ObjectItemQuantityPriceDateEffects()
         {
         }
-        public ObjectItemQuantityPriceDateEffects(long price,ObjectEffects effects,int date,short objectGID,int quantity)
+        public ObjectItemQuantityPriceDateEffects(long price,ObjectEffects effects,int date,int objectGID,int quantity)
         {
             this.price = price;
             this.effects = effects;
@@ -64,11 +62,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

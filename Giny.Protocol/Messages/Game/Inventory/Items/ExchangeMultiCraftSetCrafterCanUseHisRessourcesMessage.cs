@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeMultiCraftSetCrafterCanUseHisRessourcesMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9785;
+{     public class ExchangeMultiCraftSetCrafterCanUseHisRessourcesMessage : NetworkMessage  
+    {         public  const ushort Id = 2282;
         public override ushort MessageId => Id;
 
         public bool allow;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

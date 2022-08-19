@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PlayerSearchTagInformation : AbstractPlayerSearchInformation  
-    { 
-        public new const ushort Id = 9839;
+{     public class PlayerSearchTagInformation : AbstractPlayerSearchInformation  
+    {         public new const ushort Id = 7865;
         public override ushort TypeId => Id;
 
         public AccountTagInformation tag;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

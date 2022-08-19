@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameActionUpdateEffectTriggerCountMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5582;
+{     public class GameActionUpdateEffectTriggerCountMessage : NetworkMessage  
+    {         public  const ushort Id = 1780;
         public override ushort MessageId => Id;
 
         public GameFightEffectTriggerCount[] targetIds;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

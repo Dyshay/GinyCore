@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class CharacterBaseInformations : CharacterMinimalPlusLookInformations  
-    { 
-        public new const ushort Id = 1839;
+{     public class CharacterBaseInformations : CharacterMinimalPlusLookInformations  
+    {         public new const ushort Id = 9836;
         public override ushort TypeId => Id;
 
         public bool sex;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

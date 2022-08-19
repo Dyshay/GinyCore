@@ -6,18 +6,16 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeBidHouseGenericItemRemovedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9863;
+{     public class ExchangeBidHouseGenericItemRemovedMessage : NetworkMessage  
+    {         public  const ushort Id = 5366;
         public override ushort MessageId => Id;
 
-        public short objGenericId;
+        public int objGenericId;
 
         public ExchangeBidHouseGenericItemRemovedMessage()
         {
         }
-        public ExchangeBidHouseGenericItemRemovedMessage(short objGenericId)
+        public ExchangeBidHouseGenericItemRemovedMessage(int objGenericId)
         {
             this.objGenericId = objGenericId;
         }
@@ -28,11 +26,11 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + objGenericId + ") on element objGenericId.");
             }
 
-            writer.WriteVarShort((short)objGenericId);
+            writer.WriteVarInt((int)objGenericId);
         }
         public override void Deserialize(IDataReader reader)
         {
-            objGenericId = (short)reader.ReadVarUhShort();
+            objGenericId = (int)reader.ReadVarUhInt();
             if (objGenericId < 0)
             {
                 throw new System.Exception("Forbidden value (" + objGenericId + ") on element of ExchangeBidHouseGenericItemRemovedMessage.objGenericId.");
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

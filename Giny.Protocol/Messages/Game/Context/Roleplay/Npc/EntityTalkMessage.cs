@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class EntityTalkMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4154;
+{     public class EntityTalkMessage : NetworkMessage  
+    {         public  const ushort Id = 9347;
         public override ushort MessageId => Id;
 
         public double entityId;
@@ -74,11 +72,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

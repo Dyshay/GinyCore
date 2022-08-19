@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightTeamMemberWithAllianceCharacterInformations : FightTeamMemberCharacterInformations  
-    { 
-        public new const ushort Id = 1452;
+{     public class FightTeamMemberWithAllianceCharacterInformations : FightTeamMemberCharacterInformations  
+    {         public new const ushort Id = 6546;
         public override ushort TypeId => Id;
 
         public BasicAllianceInformations allianceInfos;
@@ -37,11 +35,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

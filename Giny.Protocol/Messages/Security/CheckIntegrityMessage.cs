@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CheckIntegrityMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 320;
+{     public class CheckIntegrityMessage : NetworkMessage  
+    {         public  const ushort Id = 140;
         public override ushort MessageId => Id;
 
         public byte[] data;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

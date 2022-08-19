@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ShortcutObjectPreset : ShortcutObject  
-    { 
-        public new const ushort Id = 7281;
+{     public class ShortcutObjectPreset : ShortcutObject  
+    {         public new const ushort Id = 1315;
         public override ushort TypeId => Id;
 
         public short presetId;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

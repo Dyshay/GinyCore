@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class QuestActiveDetailedInformations : QuestActiveInformations  
-    { 
-        public new const ushort Id = 3883;
+{     public class QuestActiveDetailedInformations : QuestActiveInformations  
+    {         public new const ushort Id = 6646;
         public override ushort TypeId => Id;
 
         public short stepId;
@@ -64,11 +62,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

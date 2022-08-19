@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ForgettableSpellListUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 584;
+{     public class ForgettableSpellListUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 8446;
         public override ushort MessageId => Id;
 
         public byte action;
@@ -55,11 +53,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

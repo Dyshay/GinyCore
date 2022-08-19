@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PortalDialogCreationMessage : NpcDialogCreationMessage  
-    { 
-        public new const ushort Id = 2360;
+{     public class PortalDialogCreationMessage : NpcDialogCreationMessage  
+    {         public new const ushort Id = 67;
         public override ushort MessageId => Id;
 
         public int type;
@@ -42,11 +40,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

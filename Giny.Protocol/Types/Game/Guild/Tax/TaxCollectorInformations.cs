@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class TaxCollectorInformations  
-    { 
-        public const ushort Id = 7513;
+{     public class TaxCollectorInformations  
+    {         public const ushort Id = 1044;
         public virtual ushort TypeId => Id;
 
         public double uniqueId;
@@ -150,11 +148,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

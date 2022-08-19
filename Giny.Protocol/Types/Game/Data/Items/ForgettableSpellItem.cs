@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ForgettableSpellItem : SpellItem  
-    { 
-        public new const ushort Id = 6689;
+{     public class ForgettableSpellItem : SpellItem  
+    {         public new const ushort Id = 3601;
         public override ushort TypeId => Id;
 
         public bool available;
@@ -35,11 +33,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightResultMutantListEntry : FightResultFighterListEntry  
-    { 
-        public new const ushort Id = 2535;
+{     public class FightResultMutantListEntry : FightResultFighterListEntry  
+    {         public new const ushort Id = 6203;
         public override ushort TypeId => Id;
 
         public short level;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

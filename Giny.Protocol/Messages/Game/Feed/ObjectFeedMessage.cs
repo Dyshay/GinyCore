@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ObjectFeedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9950;
+{     public class ObjectFeedMessage : NetworkMessage  
+    {         public  const ushort Id = 4248;
         public override ushort MessageId => Id;
 
         public int objectUID;
@@ -61,11 +59,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

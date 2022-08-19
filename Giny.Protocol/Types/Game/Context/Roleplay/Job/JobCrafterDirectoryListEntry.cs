@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class JobCrafterDirectoryListEntry  
-    { 
-        public const ushort Id = 2849;
+{     public class JobCrafterDirectoryListEntry  
+    {         public const ushort Id = 1594;
         public virtual ushort TypeId => Id;
 
         public JobCrafterDirectoryEntryPlayerInfo playerInfo;
@@ -37,11 +35,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

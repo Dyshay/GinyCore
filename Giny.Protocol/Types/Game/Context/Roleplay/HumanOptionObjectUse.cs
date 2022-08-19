@@ -4,20 +4,18 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class HumanOptionObjectUse : HumanOption  
-    { 
-        public new const ushort Id = 9403;
+{     public class HumanOptionObjectUse : HumanOption  
+    {         public new const ushort Id = 2763;
         public override ushort TypeId => Id;
 
         public byte delayTypeId;
         public double delayEndTime;
-        public short objectGID;
+        public int objectGID;
 
         public HumanOptionObjectUse()
         {
         }
-        public HumanOptionObjectUse(byte delayTypeId,double delayEndTime,short objectGID)
+        public HumanOptionObjectUse(byte delayTypeId,double delayEndTime,int objectGID)
         {
             this.delayTypeId = delayTypeId;
             this.delayEndTime = delayEndTime;
@@ -38,7 +36,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element objectGID.");
             }
 
-            writer.WriteVarShort((short)objectGID);
+            writer.WriteVarInt((int)objectGID);
         }
         public override void Deserialize(IDataReader reader)
         {
@@ -55,7 +53,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + delayEndTime + ") on element of HumanOptionObjectUse.delayEndTime.");
             }
 
-            objectGID = (short)reader.ReadVarUhShort();
+            objectGID = (int)reader.ReadVarUhInt();
             if (objectGID < 0)
             {
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element of HumanOptionObjectUse.objectGID.");
@@ -66,11 +64,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

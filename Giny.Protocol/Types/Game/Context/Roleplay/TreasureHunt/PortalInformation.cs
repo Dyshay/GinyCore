@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PortalInformation  
-    { 
-        public const ushort Id = 8424;
+{     public class PortalInformation  
+    {         public const ushort Id = 5483;
         public virtual ushort TypeId => Id;
 
         public int portalId;
@@ -35,11 +33,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

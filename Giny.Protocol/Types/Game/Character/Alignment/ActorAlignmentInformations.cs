@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ActorAlignmentInformations  
-    { 
-        public const ushort Id = 560;
+{     public class ActorAlignmentInformations  
+    {         public const ushort Id = 7796;
         public virtual ushort TypeId => Id;
 
         public byte alignmentSide;
@@ -73,11 +71,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

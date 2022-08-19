@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class TreasureHuntFlag  
-    { 
-        public const ushort Id = 2101;
+{     public class TreasureHuntFlag  
+    {         public const ushort Id = 6598;
         public virtual ushort TypeId => Id;
 
         public double mapId;
@@ -50,11 +48,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

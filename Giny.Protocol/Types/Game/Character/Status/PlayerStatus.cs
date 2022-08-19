@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PlayerStatus  
-    { 
-        public const ushort Id = 9351;
+{     public class PlayerStatus  
+    {         public const ushort Id = 4703;
         public virtual ushort TypeId => Id;
 
         public byte statusId;
@@ -36,11 +34,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

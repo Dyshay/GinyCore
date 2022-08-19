@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class CharacterMinimalAllianceInformations : CharacterMinimalGuildInformations  
-    { 
-        public new const ushort Id = 4632;
+{     public class CharacterMinimalAllianceInformations : CharacterMinimalGuildInformations  
+    {         public new const ushort Id = 9911;
         public override ushort TypeId => Id;
 
         public BasicAllianceInformations alliance;
@@ -40,11 +38,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

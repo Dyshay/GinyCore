@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CharacterSelectedSuccessMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2878;
+{     public class CharacterSelectedSuccessMessage : NetworkMessage  
+    {         public  const ushort Id = 165;
         public override ushort MessageId => Id;
 
         public CharacterBaseInformations infos;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

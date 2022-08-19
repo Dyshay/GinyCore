@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildLevelUpMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3477;
+{     public class GuildLevelUpMessage : NetworkMessage  
+    {         public  const ushort Id = 1293;
         public override ushort MessageId => Id;
 
         public byte newLevel;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

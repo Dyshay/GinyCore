@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BulletinMessage : SocialNoticeMessage  
-    { 
-        public new const ushort Id = 5239;
+{     public class BulletinMessage : SocialNoticeMessage  
+    {         public new const ushort Id = 5201;
         public override ushort MessageId => Id;
 
         public int lastNotifiedTimestamp;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

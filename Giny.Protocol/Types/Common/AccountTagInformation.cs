@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AccountTagInformation  
-    { 
-        public const ushort Id = 7235;
+{     public class AccountTagInformation  
+    {         public const ushort Id = 1835;
         public virtual ushort TypeId => Id;
 
         public string nickname;
@@ -35,11 +33,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

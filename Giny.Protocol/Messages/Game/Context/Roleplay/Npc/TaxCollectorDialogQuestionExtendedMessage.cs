@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class TaxCollectorDialogQuestionExtendedMessage : TaxCollectorDialogQuestionBasicMessage  
-    { 
-        public new const ushort Id = 9849;
+{     public class TaxCollectorDialogQuestionExtendedMessage : TaxCollectorDialogQuestionBasicMessage  
+    {         public new const ushort Id = 5492;
         public override ushort MessageId => Id;
 
         public short maxPods;
@@ -148,11 +146,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

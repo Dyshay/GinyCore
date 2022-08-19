@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class EmoteAddMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4908;
+{     public class EmoteAddMessage : NetworkMessage  
+    {         public  const ushort Id = 5779;
         public override ushort MessageId => Id;
 
         public short emoteId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class UpdateMapPlayersAgressableStatusMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4601;
+{     public class UpdateMapPlayersAgressableStatusMessage : NetworkMessage  
+    {         public  const ushort Id = 1310;
         public override ushort MessageId => Id;
 
         public long[] playerIds;
@@ -78,11 +76,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

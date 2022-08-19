@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AbstractContactInformations  
-    { 
-        public const ushort Id = 7523;
+{     public class AbstractContactInformations  
+    {         public const ushort Id = 3057;
         public virtual ushort TypeId => Id;
 
         public int accountId;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

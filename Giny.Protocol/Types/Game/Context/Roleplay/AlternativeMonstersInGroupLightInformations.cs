@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AlternativeMonstersInGroupLightInformations  
-    { 
-        public const ushort Id = 1054;
+{     public class AlternativeMonstersInGroupLightInformations  
+    {         public const ushort Id = 5541;
         public virtual ushort TypeId => Id;
 
         public int playerCount;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

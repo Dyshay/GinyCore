@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AlliancedGuildFactSheetInformations : GuildInformations  
-    { 
-        public new const ushort Id = 7484;
+{     public class AlliancedGuildFactSheetInformations : GuildInformations  
+    {         public new const ushort Id = 1200;
         public override ushort TypeId => Id;
 
         public BasicNamedAllianceInformations allianceInfos;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

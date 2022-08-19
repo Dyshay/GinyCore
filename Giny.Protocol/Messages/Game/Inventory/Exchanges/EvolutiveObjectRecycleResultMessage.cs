@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class EvolutiveObjectRecycleResultMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8653;
+{     public class EvolutiveObjectRecycleResultMessage : NetworkMessage  
+    {         public  const ushort Id = 7685;
         public override ushort MessageId => Id;
 
         public RecycledItem[] recycledItems;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

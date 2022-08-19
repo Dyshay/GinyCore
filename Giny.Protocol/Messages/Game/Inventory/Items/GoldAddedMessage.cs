@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GoldAddedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5700;
+{     public class GoldAddedMessage : NetworkMessage  
+    {         public  const ushort Id = 7014;
         public override ushort MessageId => Id;
 
         public GoldItem gold;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

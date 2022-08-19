@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class IdentificationFailedBannedMessage : IdentificationFailedMessage  
-    { 
-        public new const ushort Id = 4724;
+{     public class IdentificationFailedBannedMessage : IdentificationFailedMessage  
+    {         public new const ushort Id = 3472;
         public override ushort MessageId => Id;
 
         public double banEndDate;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

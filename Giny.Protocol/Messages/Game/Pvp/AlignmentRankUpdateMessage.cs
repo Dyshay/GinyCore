@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AlignmentRankUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 953;
+{     public class AlignmentRankUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 5018;
         public override ushort MessageId => Id;
 
         public byte alignmentRank;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

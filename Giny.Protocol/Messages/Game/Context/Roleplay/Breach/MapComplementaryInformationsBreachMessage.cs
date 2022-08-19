@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MapComplementaryInformationsBreachMessage : MapComplementaryInformationsDataMessage  
-    { 
-        public new const ushort Id = 8282;
+{     public class MapComplementaryInformationsBreachMessage : MapComplementaryInformationsDataMessage  
+    {         public new const ushort Id = 967;
         public override ushort MessageId => Id;
 
         public int floor;
@@ -103,11 +101,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

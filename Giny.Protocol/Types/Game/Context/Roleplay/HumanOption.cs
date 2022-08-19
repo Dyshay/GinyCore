@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class HumanOption  
-    { 
-        public const ushort Id = 7964;
+{     public class HumanOption  
+    {         public const ushort Id = 2909;
         public virtual ushort TypeId => Id;
 
 
@@ -24,11 +22,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

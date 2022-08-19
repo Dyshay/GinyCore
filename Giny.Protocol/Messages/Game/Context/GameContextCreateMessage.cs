@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameContextCreateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4452;
+{     public class GameContextCreateMessage : NetworkMessage  
+    {         public  const ushort Id = 7801;
         public override ushort MessageId => Id;
 
         public byte context;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

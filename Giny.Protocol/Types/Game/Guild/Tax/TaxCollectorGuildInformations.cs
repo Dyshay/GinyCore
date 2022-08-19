@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class TaxCollectorGuildInformations : TaxCollectorComplementaryInformations  
-    { 
-        public new const ushort Id = 1367;
+{     public class TaxCollectorGuildInformations : TaxCollectorComplementaryInformations  
+    {         public new const ushort Id = 4847;
         public override ushort TypeId => Id;
 
         public BasicGuildInformations guild;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

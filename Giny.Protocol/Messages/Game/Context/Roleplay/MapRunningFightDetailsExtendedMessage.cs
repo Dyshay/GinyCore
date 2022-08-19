@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MapRunningFightDetailsExtendedMessage : MapRunningFightDetailsMessage  
-    { 
-        public new const ushort Id = 6206;
+{     public class MapRunningFightDetailsExtendedMessage : MapRunningFightDetailsMessage  
+    {         public new const ushort Id = 5167;
         public override ushort MessageId => Id;
 
         public NamedPartyTeam[] namedPartyTeams;
@@ -51,11 +49,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

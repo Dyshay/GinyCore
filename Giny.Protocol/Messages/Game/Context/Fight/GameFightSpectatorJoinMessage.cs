@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightSpectatorJoinMessage : GameFightJoinMessage  
-    { 
-        public new const ushort Id = 4519;
+{     public class GameFightSpectatorJoinMessage : GameFightJoinMessage  
+    {         public new const ushort Id = 1476;
         public override ushort MessageId => Id;
 
         public NamedPartyTeam[] namedPartyTeams;
@@ -54,11 +52,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

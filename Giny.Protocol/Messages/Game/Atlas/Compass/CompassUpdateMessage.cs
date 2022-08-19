@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CompassUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1473;
+{     public class CompassUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 2075;
         public override ushort MessageId => Id;
 
         public byte type;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

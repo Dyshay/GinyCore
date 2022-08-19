@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class EntityLook  
-    { 
-        public const ushort Id = 212;
+{     public class EntityLook  
+    {         public const ushort Id = 5200;
         public virtual ushort TypeId => Id;
 
         public short bonesId;
@@ -119,11 +117,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

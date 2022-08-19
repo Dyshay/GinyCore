@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BasicTimeMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 430;
+{     public class BasicTimeMessage : NetworkMessage  
+    {         public  const ushort Id = 402;
         public override ushort MessageId => Id;
 
         public double timestamp;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

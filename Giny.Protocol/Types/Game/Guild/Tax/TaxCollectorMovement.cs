@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class TaxCollectorMovement  
-    { 
-        public const ushort Id = 3801;
+{     public class TaxCollectorMovement  
+    {         public const ushort Id = 5890;
         public virtual ushort TypeId => Id;
 
         public byte movementType;
@@ -59,11 +57,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

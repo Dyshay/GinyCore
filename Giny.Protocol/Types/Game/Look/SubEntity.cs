@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class SubEntity  
-    { 
-        public const ushort Id = 3179;
+{     public class SubEntity  
+    {         public const ushort Id = 2429;
         public virtual ushort TypeId => Id;
 
         public byte bindingPointCategory;
@@ -55,11 +53,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

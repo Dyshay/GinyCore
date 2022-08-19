@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameRolePlayArenaUpdatePlayerInfosMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9491;
+{     public class GameRolePlayArenaUpdatePlayerInfosMessage : NetworkMessage  
+    {         public  const ushort Id = 7788;
         public override ushort MessageId => Id;
 
         public ArenaRankInfos solo;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

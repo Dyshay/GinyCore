@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class HouseOnMapInformations : HouseInformations  
-    { 
-        public new const ushort Id = 7144;
+{     public class HouseOnMapInformations : HouseInformations  
+    {         public new const ushort Id = 4674;
         public override ushort TypeId => Id;
 
         public int[] doorsOnMap;
@@ -75,11 +73,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

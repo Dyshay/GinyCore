@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CreateGuildRankRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6955;
+{     public class CreateGuildRankRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 6896;
         public override ushort MessageId => Id;
 
         public int parentRankId;
@@ -61,11 +59,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

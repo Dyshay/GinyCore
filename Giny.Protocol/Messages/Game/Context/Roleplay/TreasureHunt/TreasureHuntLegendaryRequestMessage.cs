@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class TreasureHuntLegendaryRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1909;
+{     public class TreasureHuntLegendaryRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 1321;
         public override ushort MessageId => Id;
 
         public short legendaryId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

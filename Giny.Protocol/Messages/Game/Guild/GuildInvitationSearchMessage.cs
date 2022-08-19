@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildInvitationSearchMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 756;
+{     public class GuildInvitationSearchMessage : NetworkMessage  
+    {         public  const ushort Id = 6907;
         public override ushort MessageId => Id;
 
         public AbstractPlayerSearchInformation target;
@@ -36,11 +34,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

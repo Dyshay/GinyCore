@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PaddockBuyableInformations  
-    { 
-        public const ushort Id = 1474;
+{     public class PaddockBuyableInformations  
+    {         public const ushort Id = 7782;
         public virtual ushort TypeId => Id;
 
         public long price;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

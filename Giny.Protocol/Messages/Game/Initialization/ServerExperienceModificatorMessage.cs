@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ServerExperienceModificatorMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7253;
+{     public class ServerExperienceModificatorMessage : NetworkMessage  
+    {         public  const ushort Id = 3162;
         public override ushort MessageId => Id;
 
         public short experiencePercent;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

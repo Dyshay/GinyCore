@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameFightFighterEntityLightInformation : GameFightFighterLightInformations  
-    { 
-        public new const ushort Id = 8680;
+{     public class GameFightFighterEntityLightInformation : GameFightFighterLightInformations  
+    {         public new const ushort Id = 493;
         public override ushort TypeId => Id;
 
         public byte entityModelId;
@@ -63,11 +61,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

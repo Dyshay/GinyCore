@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class StopToListenRunningFightRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2991;
+{     public class StopToListenRunningFightRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 858;
         public override ushort MessageId => Id;
 
 
@@ -26,11 +24,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

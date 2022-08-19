@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeOfflineSoldItemsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6012;
+{     public class ExchangeOfflineSoldItemsMessage : NetworkMessage  
+    {         public  const ushort Id = 8152;
         public override ushort MessageId => Id;
 
         public ObjectItemQuantityPriceDateEffects[] bidHouseItems;
@@ -63,11 +61,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

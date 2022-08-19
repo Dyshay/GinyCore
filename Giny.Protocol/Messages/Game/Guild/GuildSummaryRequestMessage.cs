@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildSummaryRequestMessage : PaginationRequestAbstractMessage  
-    { 
-        public new const ushort Id = 7603;
+{     public class GuildSummaryRequestMessage : PaginationRequestAbstractMessage  
+    {         public new const ushort Id = 3167;
         public override ushort MessageId => Id;
 
         public string nameFilter;
@@ -217,11 +215,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

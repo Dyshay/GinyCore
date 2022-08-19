@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class CharacterHardcoreOrEpicInformations : CharacterBaseInformations  
-    { 
-        public new const ushort Id = 8481;
+{     public class CharacterHardcoreOrEpicInformations : CharacterBaseInformations  
+    {         public new const ushort Id = 1196;
         public override ushort TypeId => Id;
 
         public byte deathState;
@@ -72,11 +70,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

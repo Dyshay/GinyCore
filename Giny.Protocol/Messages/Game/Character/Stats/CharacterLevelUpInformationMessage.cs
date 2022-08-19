@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CharacterLevelUpInformationMessage : CharacterLevelUpMessage  
-    { 
-        public new const ushort Id = 9230;
+{     public class CharacterLevelUpInformationMessage : CharacterLevelUpMessage  
+    {         public new const ushort Id = 4362;
         public override ushort MessageId => Id;
 
         public string name;
@@ -50,11 +48,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

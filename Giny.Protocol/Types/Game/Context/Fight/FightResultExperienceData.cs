@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightResultExperienceData : FightResultAdditionalData  
-    { 
-        public new const ushort Id = 2223;
+{     public class FightResultExperienceData : FightResultAdditionalData  
+    {         public new const ushort Id = 7996;
         public override ushort TypeId => Id;
 
         public long experience;
@@ -158,11 +156,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

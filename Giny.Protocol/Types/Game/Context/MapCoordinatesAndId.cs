@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class MapCoordinatesAndId : MapCoordinates  
-    { 
-        public new const ushort Id = 1303;
+{     public class MapCoordinatesAndId : MapCoordinates  
+    {         public new const ushort Id = 8395;
         public override ushort TypeId => Id;
 
         public double mapId;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

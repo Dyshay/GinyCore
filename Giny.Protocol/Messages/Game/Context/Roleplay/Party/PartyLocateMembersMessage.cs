@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PartyLocateMembersMessage : AbstractPartyMessage  
-    { 
-        public new const ushort Id = 2028;
+{     public class PartyLocateMembersMessage : AbstractPartyMessage  
+    {         public new const ushort Id = 3560;
         public override ushort MessageId => Id;
 
         public PartyMemberGeoPosition[] geopositions;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class NpcGenericActionRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6477;
+{     public class NpcGenericActionRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 9875;
         public override ushort MessageId => Id;
 
         public int npcId;
@@ -61,11 +59,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

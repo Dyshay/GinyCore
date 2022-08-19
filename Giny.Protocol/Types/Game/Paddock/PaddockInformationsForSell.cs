@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PaddockInformationsForSell  
-    { 
-        public const ushort Id = 3003;
+{     public class PaddockInformationsForSell  
+    {         public const ushort Id = 2305;
         public virtual ushort TypeId => Id;
 
         public string guildOwner;
@@ -95,11 +93,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

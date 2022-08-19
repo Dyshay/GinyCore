@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AnomalySubareaInformation  
-    { 
-        public const ushort Id = 6099;
+{     public class AnomalySubareaInformation  
+    {         public const ushort Id = 6183;
         public virtual ushort TypeId => Id;
 
         public short subAreaId;
@@ -63,11 +61,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

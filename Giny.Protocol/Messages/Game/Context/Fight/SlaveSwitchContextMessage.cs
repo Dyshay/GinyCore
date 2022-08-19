@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class SlaveSwitchContextMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1189;
+{     public class SlaveSwitchContextMessage : NetworkMessage  
+    {         public  const ushort Id = 3962;
         public override ushort MessageId => Id;
 
         public double masterId;
@@ -113,11 +111,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

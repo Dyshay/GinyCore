@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GuildEmblem  
-    { 
-        public const ushort Id = 4435;
+{     public class GuildEmblem  
+    {         public const ushort Id = 806;
         public virtual ushort TypeId => Id;
 
         public short symbolShape;
@@ -63,11 +61,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

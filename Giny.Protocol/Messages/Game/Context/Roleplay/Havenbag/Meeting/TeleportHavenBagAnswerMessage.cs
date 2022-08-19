@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class TeleportHavenBagAnswerMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4980;
+{     public class TeleportHavenBagAnswerMessage : NetworkMessage  
+    {         public  const ushort Id = 7872;
         public override ushort MessageId => Id;
 
         public bool accept;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

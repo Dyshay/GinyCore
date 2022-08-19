@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameEntityDispositionMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 64;
+{     public class GameEntityDispositionMessage : NetworkMessage  
+    {         public  const ushort Id = 2227;
         public override ushort MessageId => Id;
 
         public IdentifiedEntityDispositionInformations disposition;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

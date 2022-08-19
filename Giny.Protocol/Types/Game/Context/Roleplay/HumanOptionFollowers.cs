@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class HumanOptionFollowers : HumanOption  
-    { 
-        public new const ushort Id = 6006;
+{     public class HumanOptionFollowers : HumanOption  
+    {         public new const ushort Id = 6730;
         public override ushort TypeId => Id;
 
         public IndexedEntityLook[] followingCharactersLook;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CharacterSelectionWithRemodelMessage : CharacterSelectionMessage  
-    { 
-        public new const ushort Id = 772;
+{     public class CharacterSelectionWithRemodelMessage : CharacterSelectionMessage  
+    {         public new const ushort Id = 2541;
         public override ushort MessageId => Id;
 
         public RemodelingInformation remodel;
@@ -37,11 +35,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildMemberSetWarnOnConnectionMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5929;
+{     public class GuildMemberSetWarnOnConnectionMessage : NetworkMessage  
+    {         public  const ushort Id = 9333;
         public override ushort MessageId => Id;
 
         public bool enable;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

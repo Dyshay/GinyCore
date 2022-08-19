@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class StorageKamasUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8712;
+{     public class StorageKamasUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 7774;
         public override ushort MessageId => Id;
 
         public long kamasTotal;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

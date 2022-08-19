@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ListMapNpcsQuestStatusUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9407;
+{     public class ListMapNpcsQuestStatusUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 2570;
         public override ushort MessageId => Id;
 
         public MapNpcQuestInfo[] mapInfo;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

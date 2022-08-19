@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class HouseKickRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6760;
+{     public class HouseKickRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 3597;
         public override ushort MessageId => Id;
 
         public long id;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildInfosUpgradeMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9899;
+{     public class GuildInfosUpgradeMessage : NetworkMessage  
+    {         public  const ushort Id = 1989;
         public override ushort MessageId => Id;
 
         public byte maxTaxCollectorsCount;
@@ -185,11 +183,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

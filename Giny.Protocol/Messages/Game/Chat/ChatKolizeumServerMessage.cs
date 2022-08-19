@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChatKolizeumServerMessage : ChatServerMessage  
-    { 
-        public new const ushort Id = 1773;
+{     public class ChatKolizeumServerMessage : ChatServerMessage  
+    {         public new const ushort Id = 4202;
         public override ushort MessageId => Id;
 
         public short originServerId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

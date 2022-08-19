@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class LockableCodeResultMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6569;
+{     public class LockableCodeResultMessage : NetworkMessage  
+    {         public  const ushort Id = 6533;
         public override ushort MessageId => Id;
 
         public byte result;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class IgnoredListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 802;
+{     public class IgnoredListMessage : NetworkMessage  
+    {         public  const ushort Id = 5883;
         public override ushort MessageId => Id;
 
         public IgnoredInformations[] ignoredList;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AchievementAchieved  
-    { 
-        public const ushort Id = 7505;
+{     public class AchievementAchieved  
+    {         public const ushort Id = 2177;
         public virtual ushort TypeId => Id;
 
         public short id;
@@ -55,11 +53,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

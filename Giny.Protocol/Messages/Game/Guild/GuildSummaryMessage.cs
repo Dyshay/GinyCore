@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildSummaryMessage : PaginationAnswerAbstractMessage  
-    { 
-        public new const ushort Id = 912;
+{     public class GuildSummaryMessage : PaginationAnswerAbstractMessage  
+    {         public new const ushort Id = 8421;
         public override ushort MessageId => Id;
 
         public GuildFactSheetInformations[] guilds;
@@ -51,11 +49,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

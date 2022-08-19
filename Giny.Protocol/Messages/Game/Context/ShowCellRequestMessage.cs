@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ShowCellRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2348;
+{     public class ShowCellRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 7075;
         public override ushort MessageId => Id;
 
         public short cellId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

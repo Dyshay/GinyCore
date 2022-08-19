@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FullStatsPreset : Preset  
-    { 
-        public new const ushort Id = 3552;
+{     public class FullStatsPreset : Preset  
+    {         public new const ushort Id = 3344;
         public override ushort TypeId => Id;
 
         public CharacterCharacteristicForPreset[] stats;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

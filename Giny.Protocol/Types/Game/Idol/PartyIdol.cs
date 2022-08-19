@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PartyIdol : Idol  
-    { 
-        public new const ushort Id = 4985;
+{     public class PartyIdol : Idol  
+    {         public new const ushort Id = 8132;
         public override ushort TypeId => Id;
 
         public long[] ownersIds;
@@ -59,11 +57,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

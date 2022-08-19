@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class CharacterMinimalPlusLookAndGradeInformations : CharacterMinimalPlusLookInformations  
-    { 
-        public new const ushort Id = 5154;
+{     public class CharacterMinimalPlusLookAndGradeInformations : CharacterMinimalPlusLookInformations  
+    {         public new const ushort Id = 8774;
         public override ushort TypeId => Id;
 
         public int grade;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

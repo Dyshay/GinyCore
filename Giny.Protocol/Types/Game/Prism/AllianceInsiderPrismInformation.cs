@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AllianceInsiderPrismInformation : PrismInformation  
-    { 
-        public new const ushort Id = 3284;
+{     public class AllianceInsiderPrismInformation : PrismInformation  
+    {         public new const ushort Id = 4051;
         public override ushort TypeId => Id;
 
         public int lastTimeSlotModificationDate;
@@ -97,11 +95,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

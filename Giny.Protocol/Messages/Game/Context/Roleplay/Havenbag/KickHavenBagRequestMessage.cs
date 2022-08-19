@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class KickHavenBagRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1774;
+{     public class KickHavenBagRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 2873;
         public override ushort MessageId => Id;
 
         public long guestId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PrismsListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9789;
+{     public class PrismsListMessage : NetworkMessage  
+    {         public  const ushort Id = 616;
         public override ushort MessageId => Id;
 
         public PrismSubareaEmptyInfo[] prisms;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

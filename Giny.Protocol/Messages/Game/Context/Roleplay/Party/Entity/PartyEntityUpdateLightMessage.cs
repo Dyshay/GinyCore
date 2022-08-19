@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PartyEntityUpdateLightMessage : PartyUpdateLightMessage  
-    { 
-        public new const ushort Id = 4442;
+{     public class PartyEntityUpdateLightMessage : PartyUpdateLightMessage  
+    {         public new const ushort Id = 2794;
         public override ushort MessageId => Id;
 
         public byte indexId;
@@ -17,7 +15,7 @@ namespace Giny.Protocol.Messages
         public PartyEntityUpdateLightMessage()
         {
         }
-        public PartyEntityUpdateLightMessage(byte indexId,int partyId,long id,int lifePoints,int maxLifePoints,short prospecting,byte regenRate)
+        public PartyEntityUpdateLightMessage(byte indexId,int partyId,long id,int lifePoints,int maxLifePoints,int prospecting,byte regenRate)
         {
             this.indexId = indexId;
             this.partyId = partyId;
@@ -51,11 +49,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

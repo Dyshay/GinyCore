@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ForgettableSpellEquipmentSlotsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5735;
+{     public class ForgettableSpellEquipmentSlotsMessage : NetworkMessage  
+    {         public  const ushort Id = 7004;
         public override ushort MessageId => Id;
 
         public short quantity;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

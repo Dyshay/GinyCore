@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PresetDeleteResultMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4352;
+{     public class PresetDeleteResultMessage : NetworkMessage  
+    {         public  const ushort Id = 1303;
         public override ushort MessageId => Id;
 
         public short presetId;
@@ -42,11 +40,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AllianceKickRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2717;
+{     public class AllianceKickRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 2910;
         public override ushort MessageId => Id;
 
         public int kickedId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

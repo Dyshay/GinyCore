@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CharacterReplayRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3168;
+{     public class CharacterReplayRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 9015;
         public override ushort MessageId => Id;
 
         public long characterId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

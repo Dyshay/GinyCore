@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildPaddockTeleportRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9763;
+{     public class GuildPaddockTeleportRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 2976;
         public override ushort MessageId => Id;
 
         public double paddockId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

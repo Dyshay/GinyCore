@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class TreasureHuntStepFollowDirectionToHint : TreasureHuntStep  
-    { 
-        public new const ushort Id = 895;
+{     public class TreasureHuntStepFollowDirectionToHint : TreasureHuntStep  
+    {         public new const ushort Id = 527;
         public override ushort TypeId => Id;
 
         public byte direction;
@@ -52,11 +50,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

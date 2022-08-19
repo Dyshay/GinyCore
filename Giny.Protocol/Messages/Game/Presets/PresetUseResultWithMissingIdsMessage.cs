@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PresetUseResultWithMissingIdsMessage : PresetUseResultMessage  
-    { 
-        public new const ushort Id = 4515;
+{     public class PresetUseResultWithMissingIdsMessage : PresetUseResultMessage  
+    {         public new const ushort Id = 1046;
         public override ushort MessageId => Id;
 
         public short[] missingIds;
@@ -60,11 +58,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

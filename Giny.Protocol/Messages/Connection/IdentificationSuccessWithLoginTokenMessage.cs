@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class IdentificationSuccessWithLoginTokenMessage : IdentificationSuccessMessage  
-    { 
-        public new const ushort Id = 427;
+{     public class IdentificationSuccessWithLoginTokenMessage : IdentificationSuccessMessage  
+    {         public new const ushort Id = 8626;
         public override ushort MessageId => Id;
 
         public string loginToken;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

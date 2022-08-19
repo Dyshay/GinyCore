@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AtlasPointsInformations  
-    { 
-        public const ushort Id = 6354;
+{     public class AtlasPointsInformations  
+    {         public const ushort Id = 7575;
         public virtual ushort TypeId => Id;
 
         public byte type;
@@ -53,11 +51,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

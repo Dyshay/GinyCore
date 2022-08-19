@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameRolePlayShowActorWithEventMessage : GameRolePlayShowActorMessage  
-    { 
-        public new const ushort Id = 4614;
+{     public class GameRolePlayShowActorWithEventMessage : GameRolePlayShowActorMessage  
+    {         public new const ushort Id = 6157;
         public override ushort MessageId => Id;
 
         public byte actorEventId;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

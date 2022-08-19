@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameDataPlayFarmObjectAnimationMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1970;
+{     public class GameDataPlayFarmObjectAnimationMessage : NetworkMessage  
+    {         public  const ushort Id = 1170;
         public override ushort MessageId => Id;
 
         public short[] cellId;
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

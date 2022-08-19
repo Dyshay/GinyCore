@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MapComplementaryInformationsDataInHavenBagMessage : MapComplementaryInformationsDataMessage  
-    { 
-        public new const ushort Id = 2912;
+{     public class MapComplementaryInformationsDataInHavenBagMessage : MapComplementaryInformationsDataMessage  
+    {         public new const ushort Id = 9063;
         public override ushort MessageId => Id;
 
         public CharacterMinimalInformations ownerInformations;
@@ -78,11 +76,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

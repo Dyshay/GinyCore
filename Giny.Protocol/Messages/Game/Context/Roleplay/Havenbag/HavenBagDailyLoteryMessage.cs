@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class HavenBagDailyLoteryMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2601;
+{     public class HavenBagDailyLoteryMessage : NetworkMessage  
+    {         public  const ushort Id = 4027;
         public override ushort MessageId => Id;
 
         public byte returnType;
@@ -42,11 +40,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

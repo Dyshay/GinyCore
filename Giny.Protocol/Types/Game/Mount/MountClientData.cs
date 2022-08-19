@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class MountClientData  
-    { 
-        public const ushort Id = 7643;
+{     public class MountClientData  
+    {         public const ushort Id = 2265;
         public virtual ushort TypeId => Id;
 
         public double id;
@@ -41,14 +39,14 @@ namespace Giny.Protocol.Types
         public double boostMax;
         public int reproductionCount;
         public int reproductionCountMax;
-        public short harnessGID;
+        public int harnessGID;
         public bool useHarnessColors;
         public ObjectEffectInteger[] effectList;
 
         public MountClientData()
         {
         }
-        public MountClientData(double id,int model,int[] ancestor,int[] behaviors,string name,bool sex,int ownerId,long experience,long experienceForLevel,double experienceForNextLevel,byte level,bool isRideable,int maxPods,bool isWild,int stamina,int staminaMax,int maturity,int maturityForAdult,int energy,int energyMax,int serenity,int aggressivityMax,int serenityMax,int love,int loveMax,int fecondationTime,bool isFecondationReady,int boostLimiter,double boostMax,int reproductionCount,int reproductionCountMax,short harnessGID,bool useHarnessColors,ObjectEffectInteger[] effectList)
+        public MountClientData(double id,int model,int[] ancestor,int[] behaviors,string name,bool sex,int ownerId,long experience,long experienceForLevel,double experienceForNextLevel,byte level,bool isRideable,int maxPods,bool isWild,int stamina,int staminaMax,int maturity,int maturityForAdult,int energy,int energyMax,int serenity,int aggressivityMax,int serenityMax,int love,int loveMax,int fecondationTime,bool isFecondationReady,int boostLimiter,double boostMax,int reproductionCount,int reproductionCountMax,int harnessGID,bool useHarnessColors,ObjectEffectInteger[] effectList)
         {
             this.id = id;
             this.model = model;
@@ -246,7 +244,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + harnessGID + ") on element harnessGID.");
             }
 
-            writer.WriteVarShort((short)harnessGID);
+            writer.WriteVarInt((int)harnessGID);
             writer.WriteShort((short)effectList.Length);
             for (uint _i34 = 0;_i34 < effectList.Length;_i34++)
             {
@@ -416,7 +414,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + reproductionCountMax + ") on element of MountClientData.reproductionCountMax.");
             }
 
-            harnessGID = (short)reader.ReadVarUhShort();
+            harnessGID = (int)reader.ReadVarUhInt();
             if (harnessGID < 0)
             {
                 throw new System.Exception("Forbidden value (" + harnessGID + ") on element of MountClientData.harnessGID.");
@@ -435,11 +433,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

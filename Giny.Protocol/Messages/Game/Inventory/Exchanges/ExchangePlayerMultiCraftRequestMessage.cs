@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangePlayerMultiCraftRequestMessage : ExchangeRequestMessage  
-    { 
-        public new const ushort Id = 5685;
+{     public class ExchangePlayerMultiCraftRequestMessage : ExchangeRequestMessage  
+    {         public new const ushort Id = 600;
         public override ushort MessageId => Id;
 
         public long target;
@@ -60,11 +58,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

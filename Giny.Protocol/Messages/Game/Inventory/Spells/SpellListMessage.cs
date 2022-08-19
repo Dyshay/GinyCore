@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class SpellListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 967;
+{     public class SpellListMessage : NetworkMessage  
+    {         public  const ushort Id = 6267;
         public override ushort MessageId => Id;
 
         public bool spellPrevisualization;
@@ -50,11 +48,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeRequestedTradeMessage : ExchangeRequestedMessage  
-    { 
-        public new const ushort Id = 6276;
+{     public class ExchangeRequestedTradeMessage : ExchangeRequestedMessage  
+    {         public new const ushort Id = 9669;
         public override ushort MessageId => Id;
 
         public long source;
@@ -60,11 +58,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

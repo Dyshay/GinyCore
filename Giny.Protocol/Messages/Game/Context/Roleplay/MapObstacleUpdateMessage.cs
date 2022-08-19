@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MapObstacleUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7517;
+{     public class MapObstacleUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 8327;
         public override ushort MessageId => Id;
 
         public MapObstacle[] obstacles;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

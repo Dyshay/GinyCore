@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BasicStatWithDataMessage : BasicStatMessage  
-    { 
-        public new const ushort Id = 5377;
+{     public class BasicStatWithDataMessage : BasicStatMessage  
+    {         public new const ushort Id = 7359;
         public override ushort MessageId => Id;
 
         public StatisticData[] datas;
@@ -53,11 +51,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

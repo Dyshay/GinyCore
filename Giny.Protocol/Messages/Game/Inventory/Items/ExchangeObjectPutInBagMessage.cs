@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeObjectPutInBagMessage : ExchangeObjectMessage  
-    { 
-        public new const ushort Id = 315;
+{     public class ExchangeObjectPutInBagMessage : ExchangeObjectMessage  
+    {         public new const ushort Id = 9125;
         public override ushort MessageId => Id;
 
         public ObjectItem @object;
@@ -37,11 +35,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

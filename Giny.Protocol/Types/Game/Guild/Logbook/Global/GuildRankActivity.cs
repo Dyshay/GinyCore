@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GuildRankActivity : GuildLogbookEntryBasicInformation  
-    { 
-        public new const ushort Id = 6586;
+{     public class GuildRankActivity : GuildLogbookEntryBasicInformation  
+    {         public new const ushort Id = 3065;
         public override ushort TypeId => Id;
 
         public byte rankActivityType;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

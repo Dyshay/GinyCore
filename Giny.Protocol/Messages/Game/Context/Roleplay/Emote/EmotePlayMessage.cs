@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class EmotePlayMessage : EmotePlayAbstractMessage  
-    { 
-        public new const ushort Id = 792;
+{     public class EmotePlayMessage : EmotePlayAbstractMessage  
+    {         public new const ushort Id = 4527;
         public override ushort MessageId => Id;
 
         public double actorId;
@@ -61,11 +59,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

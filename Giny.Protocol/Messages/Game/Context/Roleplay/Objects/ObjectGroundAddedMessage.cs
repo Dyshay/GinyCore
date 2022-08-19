@@ -6,19 +6,17 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ObjectGroundAddedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8096;
+{     public class ObjectGroundAddedMessage : NetworkMessage  
+    {         public  const ushort Id = 5465;
         public override ushort MessageId => Id;
 
         public short cellId;
-        public short objectGID;
+        public int objectGID;
 
         public ObjectGroundAddedMessage()
         {
         }
-        public ObjectGroundAddedMessage(short cellId,short objectGID)
+        public ObjectGroundAddedMessage(short cellId,int objectGID)
         {
             this.cellId = cellId;
             this.objectGID = objectGID;
@@ -36,7 +34,7 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element objectGID.");
             }
 
-            writer.WriteVarShort((short)objectGID);
+            writer.WriteVarInt((int)objectGID);
         }
         public override void Deserialize(IDataReader reader)
         {
@@ -46,7 +44,7 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + cellId + ") on element of ObjectGroundAddedMessage.cellId.");
             }
 
-            objectGID = (short)reader.ReadVarUhShort();
+            objectGID = (int)reader.ReadVarUhInt();
             if (objectGID < 0)
             {
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element of ObjectGroundAddedMessage.objectGID.");
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

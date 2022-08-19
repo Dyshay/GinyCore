@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AbstractFightTeamInformations  
-    { 
-        public const ushort Id = 7711;
+{     public class AbstractFightTeamInformations  
+    {         public const ushort Id = 1209;
         public virtual ushort TypeId => Id;
 
         public byte teamId;
@@ -77,11 +75,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

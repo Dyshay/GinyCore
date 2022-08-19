@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameActionMarkedCell  
-    { 
-        public const ushort Id = 4763;
+{     public class GameActionMarkedCell  
+    {         public const ushort Id = 4636;
         public virtual ushort TypeId => Id;
 
         public short cellId;
@@ -53,11 +51,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

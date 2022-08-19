@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameActionFightLifeAndShieldPointsLostMessage : GameActionFightLifePointsLostMessage  
-    { 
-        public new const ushort Id = 894;
+{     public class GameActionFightLifeAndShieldPointsLostMessage : GameActionFightLifePointsLostMessage  
+    {         public new const ushort Id = 9820;
         public override ushort MessageId => Id;
 
         public short shieldLoss;
@@ -51,11 +49,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

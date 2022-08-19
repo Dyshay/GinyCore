@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameRolePlaySpellAnimMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6811;
+{     public class GameRolePlaySpellAnimMessage : NetworkMessage  
+    {         public  const ushort Id = 9549;
         public override ushort MessageId => Id;
 
         public long casterId;
@@ -99,11 +97,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameRolePlayArenaSwitchToGameServerMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9711;
+{     public class GameRolePlayArenaSwitchToGameServerMessage : NetworkMessage  
+    {         public  const ushort Id = 5157;
         public override ushort MessageId => Id;
 
         public bool validToken;
@@ -54,11 +52,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

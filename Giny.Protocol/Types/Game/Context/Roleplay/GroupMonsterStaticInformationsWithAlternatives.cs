@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GroupMonsterStaticInformationsWithAlternatives : GroupMonsterStaticInformations  
-    { 
-        public new const ushort Id = 3449;
+{     public class GroupMonsterStaticInformationsWithAlternatives : GroupMonsterStaticInformations  
+    {         public new const ushort Id = 197;
         public override ushort TypeId => Id;
 
         public AlternativeMonstersInGroupLightInformations[] alternatives;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

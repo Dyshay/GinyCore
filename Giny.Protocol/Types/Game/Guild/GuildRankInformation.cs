@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GuildRankInformation : GuildRankMinimalInformation  
-    { 
-        public new const ushort Id = 742;
+{     public class GuildRankInformation : GuildRankMinimalInformation  
+    {         public new const ushort Id = 7979;
         public override ushort TypeId => Id;
 
         public int order;
@@ -90,11 +88,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

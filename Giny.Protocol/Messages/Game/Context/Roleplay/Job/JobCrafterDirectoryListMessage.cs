@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class JobCrafterDirectoryListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2905;
+{     public class JobCrafterDirectoryListMessage : NetworkMessage  
+    {         public  const ushort Id = 3607;
         public override ushort MessageId => Id;
 
         public JobCrafterDirectoryListEntry[] listEntries;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

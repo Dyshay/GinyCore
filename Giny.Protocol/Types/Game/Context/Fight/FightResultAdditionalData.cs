@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightResultAdditionalData  
-    { 
-        public const ushort Id = 2708;
+{     public class FightResultAdditionalData  
+    {         public const ushort Id = 2300;
         public virtual ushort TypeId => Id;
 
 
@@ -24,11 +22,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

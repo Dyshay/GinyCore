@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeObjectTransfertListFromInvMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9083;
+{     public class ExchangeObjectTransfertListFromInvMessage : NetworkMessage  
+    {         public  const ushort Id = 7612;
         public override ushort MessageId => Id;
 
         public int[] ids;
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

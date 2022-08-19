@@ -6,20 +6,18 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class SetUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2482;
+{     public class SetUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 9543;
         public override ushort MessageId => Id;
 
         public short setId;
-        public short[] setObjects;
+        public int[] setObjects;
         public ObjectEffect[] setEffects;
 
         public SetUpdateMessage()
         {
         }
-        public SetUpdateMessage(short setId,short[] setObjects,ObjectEffect[] setEffects)
+        public SetUpdateMessage(short setId,int[] setObjects,ObjectEffect[] setEffects)
         {
             this.setId = setId;
             this.setObjects = setObjects;
@@ -41,7 +39,7 @@ namespace Giny.Protocol.Messages
                     throw new System.Exception("Forbidden value (" + setObjects[_i2] + ") on element 2 (starting at 1) of setObjects.");
                 }
 
-                writer.WriteVarShort((short)setObjects[_i2]);
+                writer.WriteVarInt((int)setObjects[_i2]);
             }
 
             writer.WriteShort((short)setEffects.Length);
@@ -64,16 +62,16 @@ namespace Giny.Protocol.Messages
             }
 
             uint _setObjectsLen = (uint)reader.ReadUShort();
-            setObjects = new short[_setObjectsLen];
+            setObjects = new int[_setObjectsLen];
             for (uint _i2 = 0;_i2 < _setObjectsLen;_i2++)
             {
-                _val2 = (uint)reader.ReadVarUhShort();
+                _val2 = (uint)reader.ReadVarUhInt();
                 if (_val2 < 0)
                 {
                     throw new System.Exception("Forbidden value (" + _val2 + ") on elements of setObjects.");
                 }
 
-                setObjects[_i2] = (short)_val2;
+                setObjects[_i2] = (int)_val2;
             }
 
             uint _setEffectsLen = (uint)reader.ReadUShort();
@@ -90,11 +88,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class WrapperObjectErrorMessage : SymbioticObjectErrorMessage  
-    { 
-        public new const ushort Id = 1427;
+{     public class WrapperObjectErrorMessage : SymbioticObjectErrorMessage  
+    {         public new const ushort Id = 9510;
         public override ushort MessageId => Id;
 
 
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

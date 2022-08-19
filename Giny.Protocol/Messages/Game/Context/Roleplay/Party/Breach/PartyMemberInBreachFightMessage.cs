@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PartyMemberInBreachFightMessage : AbstractPartyMemberInFightMessage  
-    { 
-        public new const ushort Id = 1630;
+{     public class PartyMemberInBreachFightMessage : AbstractPartyMemberInFightMessage  
+    {         public new const ushort Id = 7058;
         public override ushort MessageId => Id;
 
         public int floor;
@@ -66,11 +64,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

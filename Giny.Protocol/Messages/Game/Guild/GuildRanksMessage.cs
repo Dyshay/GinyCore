@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildRanksMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1680;
+{     public class GuildRanksMessage : NetworkMessage  
+    {         public  const ushort Id = 4009;
         public override ushort MessageId => Id;
 
         public GuildRankInformation[] ranks;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameActionFightLifePointsLostMessage : AbstractGameActionMessage  
-    { 
-        public new const ushort Id = 3628;
+{     public class GameActionFightLifePointsLostMessage : AbstractGameActionMessage  
+    {         public new const ushort Id = 4627;
         public override ushort MessageId => Id;
 
         public double targetId;
@@ -79,11 +77,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

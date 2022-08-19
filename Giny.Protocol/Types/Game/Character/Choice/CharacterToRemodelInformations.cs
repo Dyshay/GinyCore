@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class CharacterToRemodelInformations : CharacterRemodelingInformation  
-    { 
-        public new const ushort Id = 2999;
+{     public class CharacterToRemodelInformations : CharacterRemodelingInformation  
+    {         public new const ushort Id = 2748;
         public override ushort TypeId => Id;
 
         public byte possibleChangeMask;
@@ -63,11 +61,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

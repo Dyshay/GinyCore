@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class IconNamedPresetSaveRequestMessage : IconPresetSaveRequestMessage  
-    { 
-        public new const ushort Id = 8602;
+{     public class IconNamedPresetSaveRequestMessage : IconPresetSaveRequestMessage  
+    {         public new const ushort Id = 3080;
         public override ushort MessageId => Id;
 
         public string name;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

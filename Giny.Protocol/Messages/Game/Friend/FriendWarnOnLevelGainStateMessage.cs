@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class FriendWarnOnLevelGainStateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2454;
+{     public class FriendWarnOnLevelGainStateMessage : NetworkMessage  
+    {         public  const ushort Id = 7428;
         public override ushort MessageId => Id;
 
         public bool enable;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

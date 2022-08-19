@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChangeHavenBagRoomRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8411;
+{     public class ChangeHavenBagRoomRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 5195;
         public override ushort MessageId => Id;
 
         public byte roomId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

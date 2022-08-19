@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightStartingPositions  
-    { 
-        public const ushort Id = 4728;
+{     public class FightStartingPositions  
+    {         public const ushort Id = 11;
         public virtual ushort TypeId => Id;
 
         public short[] positionsForChallengers;
@@ -81,11 +79,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class MapObstacle  
-    { 
-        public const ushort Id = 7300;
+{     public class MapObstacle  
+    {         public const ushort Id = 1180;
         public virtual ushort TypeId => Id;
 
         public short obstacleCellId;
@@ -50,11 +48,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

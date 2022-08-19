@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameMapNoMovementMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6929;
+{     public class GameMapNoMovementMessage : NetworkMessage  
+    {         public  const ushort Id = 9811;
         public override ushort MessageId => Id;
 
         public short cellX;
@@ -37,11 +35,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class UpdateSelfAgressableStatusMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1944;
+{     public class UpdateSelfAgressableStatusMessage : NetworkMessage  
+    {         public  const ushort Id = 554;
         public override ushort MessageId => Id;
 
         public byte status;
@@ -52,11 +50,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

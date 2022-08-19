@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class HouseSellFromInsideRequestMessage : HouseSellRequestMessage  
-    { 
-        public new const ushort Id = 2789;
+{     public class HouseSellFromInsideRequestMessage : HouseSellRequestMessage  
+    {         public new const ushort Id = 9889;
         public override ushort MessageId => Id;
 
 
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

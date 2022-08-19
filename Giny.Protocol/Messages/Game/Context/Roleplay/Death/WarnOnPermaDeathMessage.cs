@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class WarnOnPermaDeathMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3252;
+{     public class WarnOnPermaDeathMessage : NetworkMessage  
+    {         public  const ushort Id = 5244;
         public override ushort MessageId => Id;
 
         public bool enable;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

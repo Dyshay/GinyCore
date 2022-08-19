@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class HavenBagFurnituresRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9809;
+{     public class HavenBagFurnituresRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 4261;
         public override ushort MessageId => Id;
 
         public short[] cellIds;
@@ -100,11 +98,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

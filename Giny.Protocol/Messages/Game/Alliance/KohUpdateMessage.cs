@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class KohUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8188;
+{     public class KohUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 2399;
         public override ushort MessageId => Id;
 
         public AllianceInformations[] alliances;
@@ -186,11 +184,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

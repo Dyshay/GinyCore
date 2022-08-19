@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameRolePlayDelayedActionFinishedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9954;
+{     public class GameRolePlayDelayedActionFinishedMessage : NetworkMessage  
+    {         public  const ushort Id = 7529;
         public override ushort MessageId => Id;
 
         public double delayedCharacterId;
@@ -52,11 +50,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

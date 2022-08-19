@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CinematicMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7716;
+{     public class CinematicMessage : NetworkMessage  
+    {         public  const ushort Id = 2481;
         public override ushort MessageId => Id;
 
         public short cinematicId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

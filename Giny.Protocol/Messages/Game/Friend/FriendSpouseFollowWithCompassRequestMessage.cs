@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class FriendSpouseFollowWithCompassRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5971;
+{     public class FriendSpouseFollowWithCompassRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 1833;
         public override ushort MessageId => Id;
 
         public bool enable;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

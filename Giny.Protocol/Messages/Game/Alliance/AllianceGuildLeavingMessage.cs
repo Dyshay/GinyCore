@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AllianceGuildLeavingMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5586;
+{     public class AllianceGuildLeavingMessage : NetworkMessage  
+    {         public  const ushort Id = 4166;
         public override ushort MessageId => Id;
 
         public bool kicked;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PaddockItem : ObjectItemInRolePlay  
-    { 
-        public new const ushort Id = 7089;
+{     public class PaddockItem : ObjectItemInRolePlay  
+    {         public new const ushort Id = 216;
         public override ushort TypeId => Id;
 
         public ItemDurability durability;
@@ -15,7 +13,7 @@ namespace Giny.Protocol.Types
         public PaddockItem()
         {
         }
-        public PaddockItem(ItemDurability durability,short cellId,short objectGID)
+        public PaddockItem(ItemDurability durability,short cellId,int objectGID)
         {
             this.durability = durability;
             this.cellId = cellId;
@@ -36,11 +34,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

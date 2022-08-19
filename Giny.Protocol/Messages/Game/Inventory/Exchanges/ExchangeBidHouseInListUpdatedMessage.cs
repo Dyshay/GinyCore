@@ -6,17 +6,15 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeBidHouseInListUpdatedMessage : ExchangeBidHouseInListAddedMessage  
-    { 
-        public new const ushort Id = 5004;
+{     public class ExchangeBidHouseInListUpdatedMessage : ExchangeBidHouseInListAddedMessage  
+    {         public new const ushort Id = 6099;
         public override ushort MessageId => Id;
 
 
         public ExchangeBidHouseInListUpdatedMessage()
         {
         }
-        public ExchangeBidHouseInListUpdatedMessage(int itemUID,short objectGID,int objectType,ObjectEffect[] effects,long[] prices)
+        public ExchangeBidHouseInListUpdatedMessage(int itemUID,int objectGID,int objectType,ObjectEffect[] effects,long[] prices)
         {
             this.itemUID = itemUID;
             this.objectGID = objectGID;
@@ -36,11 +34,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

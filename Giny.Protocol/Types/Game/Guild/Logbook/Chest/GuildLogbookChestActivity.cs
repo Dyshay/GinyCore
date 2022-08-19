@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GuildLogbookChestActivity : GuildLogbookEntryBasicInformation  
-    { 
-        public new const ushort Id = 3291;
+{     public class GuildLogbookChestActivity : GuildLogbookEntryBasicInformation  
+    {         public new const ushort Id = 4492;
         public override ushort TypeId => Id;
 
         public long playerId;
@@ -15,17 +13,21 @@ namespace Giny.Protocol.Types
         public byte eventType;
         public int quantity;
         public ObjectItemNotInContainer @object;
+        public int sourceTabId;
+        public int destinationTabId;
 
         public GuildLogbookChestActivity()
         {
         }
-        public GuildLogbookChestActivity(long playerId,string playerName,byte eventType,int quantity,ObjectItemNotInContainer @object,int id,double date)
+        public GuildLogbookChestActivity(long playerId,string playerName,byte eventType,int quantity,ObjectItemNotInContainer @object,int sourceTabId,int destinationTabId,int id,double date)
         {
             this.playerId = playerId;
             this.playerName = playerName;
             this.eventType = eventType;
             this.quantity = quantity;
             this.@object = @object;
+            this.sourceTabId = sourceTabId;
+            this.destinationTabId = destinationTabId;
             this.id = id;
             this.date = date;
         }
@@ -47,6 +49,18 @@ namespace Giny.Protocol.Types
 
             writer.WriteInt((int)quantity);
             @object.Serialize(writer);
+            if (sourceTabId < 0)
+            {
+                throw new System.Exception("Forbidden value (" + sourceTabId + ") on element sourceTabId.");
+            }
+
+            writer.WriteInt((int)sourceTabId);
+            if (destinationTabId < 0)
+            {
+                throw new System.Exception("Forbidden value (" + destinationTabId + ") on element destinationTabId.");
+            }
+
+            writer.WriteInt((int)destinationTabId);
         }
         public override void Deserialize(IDataReader reader)
         {
@@ -72,16 +86,22 @@ namespace Giny.Protocol.Types
 
             @object = new ObjectItemNotInContainer();
             @object.Deserialize(reader);
+            sourceTabId = (int)reader.ReadInt();
+            if (sourceTabId < 0)
+            {
+                throw new System.Exception("Forbidden value (" + sourceTabId + ") on element of GuildLogbookChestActivity.sourceTabId.");
+            }
+
+            destinationTabId = (int)reader.ReadInt();
+            if (destinationTabId < 0)
+            {
+                throw new System.Exception("Forbidden value (" + destinationTabId + ") on element of GuildLogbookChestActivity.destinationTabId.");
+            }
+
         }
 
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AnomalySubareaInformationResponseMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8497;
+{     public class AnomalySubareaInformationResponseMessage : NetworkMessage  
+    {         public  const ushort Id = 3104;
         public override ushort MessageId => Id;
 
         public AnomalySubareaInformation[] subareas;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

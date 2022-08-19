@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ObjectEffectMount : ObjectEffect  
-    { 
-        public new const ushort Id = 3193;
+{     public class ObjectEffectMount : ObjectEffect  
+    {         public new const ushort Id = 6026;
         public override ushort TypeId => Id;
 
         public long id;
@@ -24,6 +22,7 @@ namespace Giny.Protocol.Types
         public int reproductionCountMax;
         public ObjectEffectInteger[] effects;
         public int[] capacities;
+        public short actionId;
 
         public ObjectEffectMount()
         {
@@ -175,11 +174,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class IgnoredInformations : AbstractContactInformations  
-    { 
-        public new const ushort Id = 7442;
+{     public class IgnoredInformations : AbstractContactInformations  
+    {         public new const ushort Id = 2436;
         public override ushort TypeId => Id;
 
 
@@ -31,11 +29,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

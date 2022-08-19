@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MigratedServerListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 664;
+{     public class MigratedServerListMessage : NetworkMessage  
+    {         public  const ushort Id = 3249;
         public override ushort MessageId => Id;
 
         public short[] migratedServerIds;
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

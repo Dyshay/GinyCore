@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class TeleportToBuddyCloseMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 332;
+{     public class TeleportToBuddyCloseMessage : NetworkMessage  
+    {         public  const ushort Id = 7687;
         public override ushort MessageId => Id;
 
         public short dungeonId;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

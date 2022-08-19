@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChannelEnablingChangeMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9894;
+{     public class ChannelEnablingChangeMessage : NetworkMessage  
+    {         public  const ushort Id = 4807;
         public override ushort MessageId => Id;
 
         public byte channel;
@@ -42,11 +40,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

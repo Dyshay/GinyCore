@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PaddockSellBuyDialogMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 375;
+{     public class PaddockSellBuyDialogMessage : NetworkMessage  
+    {         public  const ushort Id = 3203;
         public override ushort MessageId => Id;
 
         public bool bsell;
@@ -61,11 +59,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

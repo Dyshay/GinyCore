@@ -6,20 +6,18 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeStartOkNpcShopMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3711;
+{     public class ExchangeStartOkNpcShopMessage : NetworkMessage  
+    {         public  const ushort Id = 3147;
         public override ushort MessageId => Id;
 
         public double npcSellerId;
-        public short tokenId;
+        public int tokenId;
         public ObjectItemToSellInNpcShop[] objectsInfos;
 
         public ExchangeStartOkNpcShopMessage()
         {
         }
-        public ExchangeStartOkNpcShopMessage(double npcSellerId,short tokenId,ObjectItemToSellInNpcShop[] objectsInfos)
+        public ExchangeStartOkNpcShopMessage(double npcSellerId,int tokenId,ObjectItemToSellInNpcShop[] objectsInfos)
         {
             this.npcSellerId = npcSellerId;
             this.tokenId = tokenId;
@@ -38,7 +36,7 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + tokenId + ") on element tokenId.");
             }
 
-            writer.WriteVarShort((short)tokenId);
+            writer.WriteVarInt((int)tokenId);
             writer.WriteShort((short)objectsInfos.Length);
             for (uint _i3 = 0;_i3 < objectsInfos.Length;_i3++)
             {
@@ -55,7 +53,7 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + npcSellerId + ") on element of ExchangeStartOkNpcShopMessage.npcSellerId.");
             }
 
-            tokenId = (short)reader.ReadVarUhShort();
+            tokenId = (int)reader.ReadVarUhInt();
             if (tokenId < 0)
             {
                 throw new System.Exception("Forbidden value (" + tokenId + ") on element of ExchangeStartOkNpcShopMessage.tokenId.");
@@ -74,11 +72,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

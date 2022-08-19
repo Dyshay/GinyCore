@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PrismFightDefenderAddMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3949;
+{     public class PrismFightDefenderAddMessage : NetworkMessage  
+    {         public  const ushort Id = 7541;
         public override ushort MessageId => Id;
 
         public short subAreaId;
@@ -64,11 +62,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

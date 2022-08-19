@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class InteractiveElementWithAgeBonus : InteractiveElement  
-    { 
-        public new const ushort Id = 2318;
+{     public class InteractiveElementWithAgeBonus : InteractiveElement  
+    {         public new const ushort Id = 5109;
         public override ushort TypeId => Id;
 
         public short ageBonus;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

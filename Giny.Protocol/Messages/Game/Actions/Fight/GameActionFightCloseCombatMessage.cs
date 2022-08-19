@@ -6,18 +6,16 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameActionFightCloseCombatMessage : AbstractGameActionFightTargetedAbilityMessage  
-    { 
-        public new const ushort Id = 8107;
+{     public class GameActionFightCloseCombatMessage : AbstractGameActionFightTargetedAbilityMessage  
+    {         public new const ushort Id = 1309;
         public override ushort MessageId => Id;
 
-        public short weaponGenericId;
+        public int weaponGenericId;
 
         public GameActionFightCloseCombatMessage()
         {
         }
-        public GameActionFightCloseCombatMessage(short weaponGenericId,short actionId,double sourceId,double targetId,short destinationCellId,byte critical,bool silentCast,bool verboseCast)
+        public GameActionFightCloseCombatMessage(int weaponGenericId,short actionId,double sourceId,double targetId,short destinationCellId,byte critical,bool silentCast,bool verboseCast)
         {
             this.weaponGenericId = weaponGenericId;
             this.actionId = actionId;
@@ -36,12 +34,12 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + weaponGenericId + ") on element weaponGenericId.");
             }
 
-            writer.WriteVarShort((short)weaponGenericId);
+            writer.WriteVarInt((int)weaponGenericId);
         }
         public override void Deserialize(IDataReader reader)
         {
             base.Deserialize(reader);
-            weaponGenericId = (short)reader.ReadVarUhShort();
+            weaponGenericId = (int)reader.ReadVarUhInt();
             if (weaponGenericId < 0)
             {
                 throw new System.Exception("Forbidden value (" + weaponGenericId + ") on element of GameActionFightCloseCombatMessage.weaponGenericId.");
@@ -52,11 +50,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

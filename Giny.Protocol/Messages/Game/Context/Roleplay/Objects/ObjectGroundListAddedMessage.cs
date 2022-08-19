@@ -6,19 +6,17 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ObjectGroundListAddedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8468;
+{     public class ObjectGroundListAddedMessage : NetworkMessage  
+    {         public  const ushort Id = 859;
         public override ushort MessageId => Id;
 
         public short[] cells;
-        public short[] referenceIds;
+        public int[] referenceIds;
 
         public ObjectGroundListAddedMessage()
         {
         }
-        public ObjectGroundListAddedMessage(short[] cells,short[] referenceIds)
+        public ObjectGroundListAddedMessage(short[] cells,int[] referenceIds)
         {
             this.cells = cells;
             this.referenceIds = referenceIds;
@@ -44,7 +42,7 @@ namespace Giny.Protocol.Messages
                     throw new System.Exception("Forbidden value (" + referenceIds[_i2] + ") on element 2 (starting at 1) of referenceIds.");
                 }
 
-                writer.WriteVarShort((short)referenceIds[_i2]);
+                writer.WriteVarInt((int)referenceIds[_i2]);
             }
 
         }
@@ -66,16 +64,16 @@ namespace Giny.Protocol.Messages
             }
 
             uint _referenceIdsLen = (uint)reader.ReadUShort();
-            referenceIds = new short[_referenceIdsLen];
+            referenceIds = new int[_referenceIdsLen];
             for (uint _i2 = 0;_i2 < _referenceIdsLen;_i2++)
             {
-                _val2 = (uint)reader.ReadVarUhShort();
+                _val2 = (uint)reader.ReadVarUhInt();
                 if (_val2 < 0)
                 {
                     throw new System.Exception("Forbidden value (" + _val2 + ") on elements of referenceIds.");
                 }
 
-                referenceIds[_i2] = (short)_val2;
+                referenceIds[_i2] = (int)_val2;
             }
 
         }
@@ -83,11 +81,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

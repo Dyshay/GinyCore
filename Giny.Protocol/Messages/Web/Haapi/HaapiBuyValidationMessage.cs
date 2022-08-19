@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class HaapiBuyValidationMessage : HaapiValidationMessage  
-    { 
-        public new const ushort Id = 1897;
+{     public class HaapiBuyValidationMessage : HaapiValidationMessage  
+    {         public new const ushort Id = 1104;
         public override ushort MessageId => Id;
 
         public long amount;
@@ -51,11 +49,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

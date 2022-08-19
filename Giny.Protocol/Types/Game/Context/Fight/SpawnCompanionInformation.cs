@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class SpawnCompanionInformation : SpawnInformation  
-    { 
-        public new const ushort Id = 8648;
+{     public class SpawnCompanionInformation : SpawnInformation  
+    {         public new const ushort Id = 7394;
         public override ushort TypeId => Id;
 
         public byte modelId;
@@ -85,11 +83,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

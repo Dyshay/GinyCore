@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AuthenticationTicketRefusedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7611;
+{     public class AuthenticationTicketRefusedMessage : NetworkMessage  
+    {         public  const ushort Id = 783;
         public override ushort MessageId => Id;
 
 
@@ -26,11 +24,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

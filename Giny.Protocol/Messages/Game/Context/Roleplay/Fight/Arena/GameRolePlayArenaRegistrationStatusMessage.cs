@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameRolePlayArenaRegistrationStatusMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6165;
+{     public class GameRolePlayArenaRegistrationStatusMessage : NetworkMessage  
+    {         public  const ushort Id = 9675;
         public override ushort MessageId => Id;
 
         public bool registered;
@@ -51,11 +49,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

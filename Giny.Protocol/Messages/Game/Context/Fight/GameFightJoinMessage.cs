@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightJoinMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3603;
+{     public class GameFightJoinMessage : NetworkMessage  
+    {         public  const ushort Id = 8292;
         public override ushort MessageId => Id;
 
         public bool isTeamPhase;
@@ -71,11 +69,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

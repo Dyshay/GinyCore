@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ShortcutBarAddRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5533;
+{     public class ShortcutBarAddRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 5625;
         public override ushort MessageId => Id;
 
         public byte barType;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AcquaintancesGetListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1878;
+{     public class AcquaintancesGetListMessage : NetworkMessage  
+    {         public  const ushort Id = 7459;
         public override ushort MessageId => Id;
 
 
@@ -26,11 +24,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

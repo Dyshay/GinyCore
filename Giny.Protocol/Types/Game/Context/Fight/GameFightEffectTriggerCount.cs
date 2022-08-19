@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameFightEffectTriggerCount  
-    { 
-        public const ushort Id = 463;
+{     public class GameFightEffectTriggerCount  
+    {         public const ushort Id = 3232;
         public virtual ushort TypeId => Id;
 
         public int effectId;
@@ -69,11 +67,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

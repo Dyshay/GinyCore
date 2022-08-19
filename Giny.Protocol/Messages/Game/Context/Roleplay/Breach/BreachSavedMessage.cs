@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BreachSavedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 593;
+{     public class BreachSavedMessage : NetworkMessage  
+    {         public  const ushort Id = 2636;
         public override ushort MessageId => Id;
 
         public bool saved;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

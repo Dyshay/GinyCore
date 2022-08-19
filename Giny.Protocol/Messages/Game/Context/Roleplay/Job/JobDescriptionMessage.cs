@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class JobDescriptionMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8240;
+{     public class JobDescriptionMessage : NetworkMessage  
+    {         public  const ushort Id = 9090;
         public override ushort MessageId => Id;
 
         public JobDescription[] jobsDescription;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

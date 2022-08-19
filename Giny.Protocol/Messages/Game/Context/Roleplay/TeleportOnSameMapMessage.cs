@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class TeleportOnSameMapMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2720;
+{     public class TeleportOnSameMapMessage : NetworkMessage  
+    {         public  const ushort Id = 3749;
         public override ushort MessageId => Id;
 
         public double targetId;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

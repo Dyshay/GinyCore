@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class DungeonPartyFinderPlayer  
-    { 
-        public const ushort Id = 1848;
+{     public class DungeonPartyFinderPlayer  
+    {         public const ushort Id = 7952;
         public virtual ushort TypeId => Id;
 
         public long playerId;
@@ -72,11 +70,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class DumpedEntityStatsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 120;
+{     public class DumpedEntityStatsMessage : NetworkMessage  
+    {         public  const ushort Id = 7332;
         public override ushort MessageId => Id;
 
         public double actorId;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

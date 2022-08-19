@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeCraftPaymentModifiedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9955;
+{     public class ExchangeCraftPaymentModifiedMessage : NetworkMessage  
+    {         public  const ushort Id = 9375;
         public override ushort MessageId => Id;
 
         public long goldSum;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

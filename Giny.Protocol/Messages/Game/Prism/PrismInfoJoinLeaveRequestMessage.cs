@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PrismInfoJoinLeaveRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2253;
+{     public class PrismInfoJoinLeaveRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 2347;
         public override ushort MessageId => Id;
 
         public bool join;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

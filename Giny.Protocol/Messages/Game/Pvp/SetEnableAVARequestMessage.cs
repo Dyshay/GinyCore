@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class SetEnableAVARequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4570;
+{     public class SetEnableAVARequestMessage : NetworkMessage  
+    {         public  const ushort Id = 9501;
         public override ushort MessageId => Id;
 
         public bool enable;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

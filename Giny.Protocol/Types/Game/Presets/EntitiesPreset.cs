@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class EntitiesPreset : Preset  
-    { 
-        public new const ushort Id = 5598;
+{     public class EntitiesPreset : Preset  
+    {         public new const ushort Id = 6578;
         public override ushort TypeId => Id;
 
         public short iconId;
@@ -71,11 +69,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

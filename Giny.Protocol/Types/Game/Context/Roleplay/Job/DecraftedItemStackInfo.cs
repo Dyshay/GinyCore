@@ -4,22 +4,20 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class DecraftedItemStackInfo  
-    { 
-        public const ushort Id = 1111;
+{     public class DecraftedItemStackInfo  
+    {         public const ushort Id = 1461;
         public virtual ushort TypeId => Id;
 
         public int objectUID;
         public float bonusMin;
         public float bonusMax;
-        public short[] runesId;
+        public int[] runesId;
         public int[] runesQty;
 
         public DecraftedItemStackInfo()
         {
         }
-        public DecraftedItemStackInfo(int objectUID,float bonusMin,float bonusMax,short[] runesId,int[] runesQty)
+        public DecraftedItemStackInfo(int objectUID,float bonusMin,float bonusMax,int[] runesId,int[] runesQty)
         {
             this.objectUID = objectUID;
             this.bonusMin = bonusMin;
@@ -45,7 +43,7 @@ namespace Giny.Protocol.Types
                     throw new System.Exception("Forbidden value (" + runesId[_i4] + ") on element 4 (starting at 1) of runesId.");
                 }
 
-                writer.WriteVarShort((short)runesId[_i4]);
+                writer.WriteVarInt((int)runesId[_i4]);
             }
 
             writer.WriteShort((short)runesQty.Length);
@@ -73,16 +71,16 @@ namespace Giny.Protocol.Types
             bonusMin = (float)reader.ReadFloat();
             bonusMax = (float)reader.ReadFloat();
             uint _runesIdLen = (uint)reader.ReadUShort();
-            runesId = new short[_runesIdLen];
+            runesId = new int[_runesIdLen];
             for (uint _i4 = 0;_i4 < _runesIdLen;_i4++)
             {
-                _val4 = (uint)reader.ReadVarUhShort();
+                _val4 = (uint)reader.ReadVarUhInt();
                 if (_val4 < 0)
                 {
                     throw new System.Exception("Forbidden value (" + _val4 + ") on elements of runesId.");
                 }
 
-                runesId[_i4] = (short)_val4;
+                runesId[_i4] = (int)_val4;
             }
 
             uint _runesQtyLen = (uint)reader.ReadUShort();
@@ -103,11 +101,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

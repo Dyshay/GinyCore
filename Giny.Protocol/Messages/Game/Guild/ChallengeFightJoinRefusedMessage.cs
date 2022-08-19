@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChallengeFightJoinRefusedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4862;
+{     public class ChallengeFightJoinRefusedMessage : NetworkMessage  
+    {         public  const ushort Id = 6067;
         public override ushort MessageId => Id;
 
         public long playerId;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

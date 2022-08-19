@@ -4,14 +4,12 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class BidExchangerObjectInfo  
-    { 
-        public const ushort Id = 7649;
+{     public class BidExchangerObjectInfo  
+    {         public const ushort Id = 5017;
         public virtual ushort TypeId => Id;
 
         public int objectUID;
-        public short objectGID;
+        public int objectGID;
         public int objectType;
         public ObjectEffect[] effects;
         public long[] prices;
@@ -19,7 +17,7 @@ namespace Giny.Protocol.Types
         public BidExchangerObjectInfo()
         {
         }
-        public BidExchangerObjectInfo(int objectUID,short objectGID,int objectType,ObjectEffect[] effects,long[] prices)
+        public BidExchangerObjectInfo(int objectUID,int objectGID,int objectType,ObjectEffect[] effects,long[] prices)
         {
             this.objectUID = objectUID;
             this.objectGID = objectGID;
@@ -40,7 +38,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element objectGID.");
             }
 
-            writer.WriteVarShort((short)objectGID);
+            writer.WriteVarInt((int)objectGID);
             if (objectType < 0)
             {
                 throw new System.Exception("Forbidden value (" + objectType + ") on element objectType.");
@@ -77,7 +75,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + objectUID + ") on element of BidExchangerObjectInfo.objectUID.");
             }
 
-            objectGID = (short)reader.ReadVarUhShort();
+            objectGID = (int)reader.ReadVarUhInt();
             if (objectGID < 0)
             {
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element of BidExchangerObjectInfo.objectGID.");
@@ -116,11 +114,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

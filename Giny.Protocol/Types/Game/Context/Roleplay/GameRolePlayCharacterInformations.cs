@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameRolePlayCharacterInformations : GameRolePlayHumanoidInformations  
-    { 
-        public new const ushort Id = 3465;
+{     public class GameRolePlayCharacterInformations : GameRolePlayHumanoidInformations  
+    {         public new const ushort Id = 6485;
         public override ushort TypeId => Id;
 
         public ActorAlignmentInformations alignmentInfos;
@@ -40,11 +38,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

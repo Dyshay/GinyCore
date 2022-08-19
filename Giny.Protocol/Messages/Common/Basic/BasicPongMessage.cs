@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BasicPongMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5303;
+{     public class BasicPongMessage : NetworkMessage  
+    {         public  const ushort Id = 8750;
         public override ushort MessageId => Id;
 
         public bool quiet;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

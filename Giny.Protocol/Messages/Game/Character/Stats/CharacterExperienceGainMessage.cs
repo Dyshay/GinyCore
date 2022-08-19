@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CharacterExperienceGainMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1383;
+{     public class CharacterExperienceGainMessage : NetworkMessage  
+    {         public  const ushort Id = 1164;
         public override ushort MessageId => Id;
 
         public long experienceCharacter;
@@ -85,11 +83,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

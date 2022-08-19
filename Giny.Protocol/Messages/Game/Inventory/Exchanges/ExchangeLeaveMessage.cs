@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeLeaveMessage : LeaveDialogMessage  
-    { 
-        public new const ushort Id = 5922;
+{     public class ExchangeLeaveMessage : LeaveDialogMessage  
+    {         public new const ushort Id = 6660;
         public override ushort MessageId => Id;
 
         public bool success;
@@ -36,11 +34,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

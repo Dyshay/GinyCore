@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class MapNpcQuestInfo  
-    { 
-        public const ushort Id = 8860;
+{     public class MapNpcQuestInfo  
+    {         public const ushort Id = 8634;
         public virtual ushort TypeId => Id;
 
         public double mapId;
@@ -75,11 +73,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

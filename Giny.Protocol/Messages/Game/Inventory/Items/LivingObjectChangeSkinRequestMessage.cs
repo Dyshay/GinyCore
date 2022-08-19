@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class LivingObjectChangeSkinRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 908;
+{     public class LivingObjectChangeSkinRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 6104;
         public override ushort MessageId => Id;
 
         public int livingUID;
@@ -71,11 +69,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class Preset  
-    { 
-        public const ushort Id = 4056;
+{     public class Preset  
+    {         public const ushort Id = 2869;
         public virtual ushort TypeId => Id;
 
         public short id;
@@ -31,11 +29,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

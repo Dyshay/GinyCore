@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ServerStatusUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7668;
+{     public class ServerStatusUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 4062;
         public override ushort MessageId => Id;
 
         public GameServerInformations server;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,22 +6,20 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PartyUpdateLightMessage : AbstractPartyEventMessage  
-    { 
-        public new const ushort Id = 8058;
+{     public class PartyUpdateLightMessage : AbstractPartyEventMessage  
+    {         public new const ushort Id = 139;
         public override ushort MessageId => Id;
 
         public long id;
         public int lifePoints;
         public int maxLifePoints;
-        public short prospecting;
+        public int prospecting;
         public byte regenRate;
 
         public PartyUpdateLightMessage()
         {
         }
-        public PartyUpdateLightMessage(long id,int lifePoints,int maxLifePoints,short prospecting,byte regenRate,int partyId)
+        public PartyUpdateLightMessage(long id,int lifePoints,int maxLifePoints,int prospecting,byte regenRate,int partyId)
         {
             this.id = id;
             this.lifePoints = lifePoints;
@@ -56,7 +54,7 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + prospecting + ") on element prospecting.");
             }
 
-            writer.WriteVarShort((short)prospecting);
+            writer.WriteVarInt((int)prospecting);
             if (regenRate < 0 || regenRate > 255)
             {
                 throw new System.Exception("Forbidden value (" + regenRate + ") on element regenRate.");
@@ -85,7 +83,7 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + maxLifePoints + ") on element of PartyUpdateLightMessage.maxLifePoints.");
             }
 
-            prospecting = (short)reader.ReadVarUhShort();
+            prospecting = (int)reader.ReadVarUhInt();
             if (prospecting < 0)
             {
                 throw new System.Exception("Forbidden value (" + prospecting + ") on element of PartyUpdateLightMessage.prospecting.");
@@ -102,11 +100,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

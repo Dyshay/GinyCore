@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PaginationAnswerAbstractMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2497;
+{     public class PaginationAnswerAbstractMessage : NetworkMessage  
+    {         public  const ushort Id = 4563;
         public override ushort MessageId => Id;
 
         public double offset;
@@ -71,11 +69,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

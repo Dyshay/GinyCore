@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class StartupActionsAllAttributionMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 789;
+{     public class StartupActionsAllAttributionMessage : NetworkMessage  
+    {         public  const ushort Id = 2000;
         public override ushort MessageId => Id;
 
         public long characterId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

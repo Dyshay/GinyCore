@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class SpawnCharacterInformation : SpawnInformation  
-    { 
-        public new const ushort Id = 6870;
+{     public class SpawnCharacterInformation : SpawnInformation  
+    {         public new const ushort Id = 2591;
         public override ushort TypeId => Id;
 
         public string name;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class FriendDeleteResultMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7028;
+{     public class FriendDeleteResultMessage : NetworkMessage  
+    {         public  const ushort Id = 9837;
         public override ushort MessageId => Id;
 
         public bool success;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

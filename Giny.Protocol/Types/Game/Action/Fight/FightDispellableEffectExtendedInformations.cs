@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightDispellableEffectExtendedInformations  
-    { 
-        public const ushort Id = 9766;
+{     public class FightDispellableEffectExtendedInformations  
+    {         public const ushort Id = 7024;
         public virtual ushort TypeId => Id;
 
         public short actionId;
@@ -62,11 +60,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

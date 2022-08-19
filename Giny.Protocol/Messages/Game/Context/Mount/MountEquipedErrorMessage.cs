@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MountEquipedErrorMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9383;
+{     public class MountEquipedErrorMessage : NetworkMessage  
+    {         public  const ushort Id = 6791;
         public override ushort MessageId => Id;
 
         public byte errorType;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

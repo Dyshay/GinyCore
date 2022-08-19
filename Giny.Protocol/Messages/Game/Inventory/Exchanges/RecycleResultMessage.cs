@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class RecycleResultMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1416;
+{     public class RecycleResultMessage : NetworkMessage  
+    {         public  const ushort Id = 5977;
         public override ushort MessageId => Id;
 
         public int nuggetsForPrism;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

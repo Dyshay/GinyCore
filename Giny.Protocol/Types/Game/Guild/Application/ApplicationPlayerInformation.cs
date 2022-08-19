@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ApplicationPlayerInformation  
-    { 
-        public const ushort Id = 6686;
+{     public class ApplicationPlayerInformation  
+    {         public const ushort Id = 6454;
         public virtual ushort TypeId => Id;
 
         public long playerId;
@@ -99,11 +97,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

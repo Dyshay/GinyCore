@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChatErrorMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3972;
+{     public class ChatErrorMessage : NetworkMessage  
+    {         public  const ushort Id = 8286;
         public override ushort MessageId => Id;
 
         public byte reason;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

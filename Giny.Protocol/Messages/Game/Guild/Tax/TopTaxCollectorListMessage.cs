@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class TopTaxCollectorListMessage : AbstractTaxCollectorListMessage  
-    { 
-        public new const ushort Id = 448;
+{     public class TopTaxCollectorListMessage : AbstractTaxCollectorListMessage  
+    {         public new const ushort Id = 9339;
         public override ushort MessageId => Id;
 
         public bool isDungeon;
@@ -36,11 +34,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

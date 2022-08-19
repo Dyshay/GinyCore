@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MimicryObjectAssociatedMessage : SymbioticObjectAssociatedMessage  
-    { 
-        public new const ushort Id = 2699;
+{     public class MimicryObjectAssociatedMessage : SymbioticObjectAssociatedMessage  
+    {         public new const ushort Id = 7805;
         public override ushort MessageId => Id;
 
 
@@ -32,11 +30,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PrismInfoInValidMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8239;
+{     public class PrismInfoInValidMessage : NetworkMessage  
+    {         public  const ushort Id = 6591;
         public override ushort MessageId => Id;
 
         public byte reason;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

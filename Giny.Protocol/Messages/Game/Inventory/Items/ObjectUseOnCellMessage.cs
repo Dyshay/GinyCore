@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ObjectUseOnCellMessage : ObjectUseMessage  
-    { 
-        public new const ushort Id = 1222;
+{     public class ObjectUseOnCellMessage : ObjectUseMessage  
+    {         public new const ushort Id = 350;
         public override ushort MessageId => Id;
 
         public short cells;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,21 +6,19 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class LivingObjectMessageMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9837;
+{     public class LivingObjectMessageMessage : NetworkMessage  
+    {         public  const ushort Id = 7135;
         public override ushort MessageId => Id;
 
         public short msgId;
         public int timeStamp;
         public string owner;
-        public short objectGenericId;
+        public int objectGenericId;
 
         public LivingObjectMessageMessage()
         {
         }
-        public LivingObjectMessageMessage(short msgId,int timeStamp,string owner,short objectGenericId)
+        public LivingObjectMessageMessage(short msgId,int timeStamp,string owner,int objectGenericId)
         {
             this.msgId = msgId;
             this.timeStamp = timeStamp;
@@ -47,7 +45,7 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + objectGenericId + ") on element objectGenericId.");
             }
 
-            writer.WriteVarShort((short)objectGenericId);
+            writer.WriteVarInt((int)objectGenericId);
         }
         public override void Deserialize(IDataReader reader)
         {
@@ -64,7 +62,7 @@ namespace Giny.Protocol.Messages
             }
 
             owner = (string)reader.ReadUTF();
-            objectGenericId = (short)reader.ReadVarUhShort();
+            objectGenericId = (int)reader.ReadVarUhInt();
             if (objectGenericId < 0)
             {
                 throw new System.Exception("Forbidden value (" + objectGenericId + ") on element of LivingObjectMessageMessage.objectGenericId.");
@@ -75,11 +73,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

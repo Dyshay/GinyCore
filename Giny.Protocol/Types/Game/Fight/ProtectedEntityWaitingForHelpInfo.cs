@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ProtectedEntityWaitingForHelpInfo  
-    { 
-        public const ushort Id = 691;
+{     public class ProtectedEntityWaitingForHelpInfo  
+    {         public const ushort Id = 3811;
         public virtual ushort TypeId => Id;
 
         public int timeLeftBeforeFight;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

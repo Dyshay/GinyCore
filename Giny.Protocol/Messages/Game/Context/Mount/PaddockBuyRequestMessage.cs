@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PaddockBuyRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6064;
+{     public class PaddockBuyRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 9739;
         public override ushort MessageId => Id;
 
         public long proposedPrice;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

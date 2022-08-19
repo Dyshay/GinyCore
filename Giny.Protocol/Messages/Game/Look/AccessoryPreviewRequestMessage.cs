@@ -6,18 +6,16 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AccessoryPreviewRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1584;
+{     public class AccessoryPreviewRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 9868;
         public override ushort MessageId => Id;
 
-        public short[] genericId;
+        public int[] genericId;
 
         public AccessoryPreviewRequestMessage()
         {
         }
-        public AccessoryPreviewRequestMessage(short[] genericId)
+        public AccessoryPreviewRequestMessage(int[] genericId)
         {
             this.genericId = genericId;
         }
@@ -31,7 +29,7 @@ namespace Giny.Protocol.Messages
                     throw new System.Exception("Forbidden value (" + genericId[_i1] + ") on element 1 (starting at 1) of genericId.");
                 }
 
-                writer.WriteVarShort((short)genericId[_i1]);
+                writer.WriteVarInt((int)genericId[_i1]);
             }
 
         }
@@ -39,16 +37,16 @@ namespace Giny.Protocol.Messages
         {
             uint _val1 = 0;
             uint _genericIdLen = (uint)reader.ReadUShort();
-            genericId = new short[_genericIdLen];
+            genericId = new int[_genericIdLen];
             for (uint _i1 = 0;_i1 < _genericIdLen;_i1++)
             {
-                _val1 = (uint)reader.ReadVarUhShort();
+                _val1 = (uint)reader.ReadVarUhInt();
                 if (_val1 < 0)
                 {
                     throw new System.Exception("Forbidden value (" + _val1 + ") on elements of genericId.");
                 }
 
-                genericId[_i1] = (short)_val1;
+                genericId[_i1] = (int)_val1;
             }
 
         }
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

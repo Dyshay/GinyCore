@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PaddockContentInformations : PaddockInformations  
-    { 
-        public new const ushort Id = 6719;
+{     public class PaddockContentInformations : PaddockInformations  
+    {         public new const ushort Id = 3604;
         public override ushort TypeId => Id;
 
         public double paddockId;
@@ -122,11 +120,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

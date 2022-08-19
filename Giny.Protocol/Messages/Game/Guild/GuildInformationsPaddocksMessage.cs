@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildInformationsPaddocksMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1386;
+{     public class GuildInformationsPaddocksMessage : NetworkMessage  
+    {         public  const ushort Id = 6826;
         public override ushort MessageId => Id;
 
         public byte nbPaddockMax;
@@ -60,11 +58,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

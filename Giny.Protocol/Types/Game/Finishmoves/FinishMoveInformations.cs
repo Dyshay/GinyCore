@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FinishMoveInformations  
-    { 
-        public const ushort Id = 9080;
+{     public class FinishMoveInformations  
+    {         public const ushort Id = 981;
         public virtual ushort TypeId => Id;
 
         public int finishMoveId;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

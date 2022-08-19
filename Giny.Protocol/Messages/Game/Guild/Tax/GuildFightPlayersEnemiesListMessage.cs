@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildFightPlayersEnemiesListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2719;
+{     public class GuildFightPlayersEnemiesListMessage : NetworkMessage  
+    {         public  const ushort Id = 5830;
         public override ushort MessageId => Id;
 
         public double fightId;
@@ -60,11 +58,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

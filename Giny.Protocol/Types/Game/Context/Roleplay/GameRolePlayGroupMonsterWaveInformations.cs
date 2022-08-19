@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameRolePlayGroupMonsterWaveInformations : GameRolePlayGroupMonsterInformations  
-    { 
-        public new const ushort Id = 7122;
+{     public class GameRolePlayGroupMonsterWaveInformations : GameRolePlayGroupMonsterInformations  
+    {         public new const ushort Id = 2770;
         public override ushort TypeId => Id;
 
         public byte nbWaves;
@@ -72,11 +70,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

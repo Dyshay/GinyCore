@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PartyInvitationDetailsRequestMessage : AbstractPartyMessage  
-    { 
-        public new const ushort Id = 292;
+{     public class PartyInvitationDetailsRequestMessage : AbstractPartyMessage  
+    {         public new const ushort Id = 1985;
         public override ushort MessageId => Id;
 
 
@@ -32,11 +30,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

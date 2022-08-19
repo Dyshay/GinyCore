@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangePlayerRequestMessage : ExchangeRequestMessage  
-    { 
-        public new const ushort Id = 4119;
+{     public class ExchangePlayerRequestMessage : ExchangeRequestMessage  
+    {         public new const ushort Id = 9205;
         public override ushort MessageId => Id;
 
         public long target;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

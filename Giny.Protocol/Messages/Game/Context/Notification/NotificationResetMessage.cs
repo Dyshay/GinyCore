@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class NotificationResetMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9892;
+{     public class NotificationResetMessage : NetworkMessage  
+    {         public  const ushort Id = 9563;
         public override ushort MessageId => Id;
 
 
@@ -26,11 +24,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameMapSpeedMovementMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7714;
+{     public class GameMapSpeedMovementMessage : NetworkMessage  
+    {         public  const ushort Id = 7714;
         public override ushort MessageId => Id;
 
         public int speedMultiplier;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

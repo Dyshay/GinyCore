@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChatAdminServerMessage : ChatServerMessage  
-    { 
-        public new const ushort Id = 6906;
+{     public class ChatAdminServerMessage : ChatServerMessage  
+    {         public new const ushort Id = 111;
         public override ushort MessageId => Id;
 
 
@@ -39,11 +37,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

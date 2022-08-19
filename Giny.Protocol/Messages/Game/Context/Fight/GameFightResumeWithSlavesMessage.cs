@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightResumeWithSlavesMessage : GameFightResumeMessage  
-    { 
-        public new const ushort Id = 1683;
+{     public class GameFightResumeWithSlavesMessage : GameFightResumeMessage  
+    {         public new const ushort Id = 3517;
         public override ushort MessageId => Id;
 
         public GameFightResumeSlaveInfo[] slavesInfo;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

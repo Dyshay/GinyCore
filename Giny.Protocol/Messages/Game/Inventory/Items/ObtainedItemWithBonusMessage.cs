@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ObtainedItemWithBonusMessage : ObtainedItemMessage  
-    { 
-        public new const ushort Id = 9026;
+{     public class ObtainedItemWithBonusMessage : ObtainedItemMessage  
+    {         public new const ushort Id = 6447;
         public override ushort MessageId => Id;
 
         public int bonusQuantity;
@@ -17,7 +15,7 @@ namespace Giny.Protocol.Messages
         public ObtainedItemWithBonusMessage()
         {
         }
-        public ObtainedItemWithBonusMessage(int bonusQuantity,short genericId,int baseQuantity)
+        public ObtainedItemWithBonusMessage(int bonusQuantity,int genericId,int baseQuantity)
         {
             this.bonusQuantity = bonusQuantity;
             this.genericId = genericId;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

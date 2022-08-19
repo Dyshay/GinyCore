@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameContextRefreshEntityLookMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7169;
+{     public class GameContextRefreshEntityLookMessage : NetworkMessage  
+    {         public  const ushort Id = 4275;
         public override ushort MessageId => Id;
 
         public double id;
@@ -48,11 +46,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

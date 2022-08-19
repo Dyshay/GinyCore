@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ShortcutSmiley : Shortcut  
-    { 
-        public new const ushort Id = 4874;
+{     public class ShortcutSmiley : Shortcut  
+    {         public new const ushort Id = 9867;
         public override ushort TypeId => Id;
 
         public short smileyId;
@@ -44,11 +42,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

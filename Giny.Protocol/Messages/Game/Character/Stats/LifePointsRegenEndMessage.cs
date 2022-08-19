@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class LifePointsRegenEndMessage : UpdateLifePointsMessage  
-    { 
-        public new const ushort Id = 494;
+{     public class LifePointsRegenEndMessage : UpdateLifePointsMessage  
+    {         public new const ushort Id = 1517;
         public override ushort MessageId => Id;
 
         public int lifePointsGained;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

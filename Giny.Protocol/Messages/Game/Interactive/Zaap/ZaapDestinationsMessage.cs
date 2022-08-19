@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ZaapDestinationsMessage : TeleportDestinationsMessage  
-    { 
-        public new const ushort Id = 4986;
+{     public class ZaapDestinationsMessage : TeleportDestinationsMessage  
+    {         public new const ushort Id = 8516;
         public override ushort MessageId => Id;
 
         public double spawnMapId;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameContextRemoveMultipleElementsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3528;
+{     public class GameContextRemoveMultipleElementsMessage : NetworkMessage  
+    {         public  const ushort Id = 9128;
         public override ushort MessageId => Id;
 
         public double[] elementsIds;
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

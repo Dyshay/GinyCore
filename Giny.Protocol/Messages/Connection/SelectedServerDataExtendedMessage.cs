@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class SelectedServerDataExtendedMessage : SelectedServerDataMessage  
-    { 
-        public new const ushort Id = 7776;
+{     public class SelectedServerDataExtendedMessage : SelectedServerDataMessage  
+    {         public new const ushort Id = 4439;
         public override ushort MessageId => Id;
 
         public GameServerInformations[] servers;
@@ -53,11 +51,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

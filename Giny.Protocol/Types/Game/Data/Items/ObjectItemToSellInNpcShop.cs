@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ObjectItemToSellInNpcShop : ObjectItemMinimalInformation  
-    { 
-        public new const ushort Id = 357;
+{     public class ObjectItemToSellInNpcShop : ObjectItemMinimalInformation  
+    {         public new const ushort Id = 2250;
         public override ushort TypeId => Id;
 
         public long objectPrice;
@@ -16,7 +14,7 @@ namespace Giny.Protocol.Types
         public ObjectItemToSellInNpcShop()
         {
         }
-        public ObjectItemToSellInNpcShop(long objectPrice,string buyCriterion,short objectGID,ObjectEffect[] effects)
+        public ObjectItemToSellInNpcShop(long objectPrice,string buyCriterion,int objectGID,ObjectEffect[] effects)
         {
             this.objectPrice = objectPrice;
             this.buyCriterion = buyCriterion;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

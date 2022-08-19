@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class TaxCollectorMovementMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4091;
+{     public class TaxCollectorMovementMessage : NetworkMessage  
+    {         public  const ushort Id = 1421;
         public override ushort MessageId => Id;
 
         public byte movementType;
@@ -61,11 +59,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

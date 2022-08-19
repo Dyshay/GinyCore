@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GuildLogbookEntryBasicInformation  
-    { 
-        public const ushort Id = 3961;
+{     public class GuildLogbookEntryBasicInformation  
+    {         public const ushort Id = 8461;
         public virtual ushort TypeId => Id;
 
         public int id;
@@ -55,11 +53,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

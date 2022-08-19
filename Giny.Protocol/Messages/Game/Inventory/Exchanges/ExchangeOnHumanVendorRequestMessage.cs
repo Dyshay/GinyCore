@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeOnHumanVendorRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3748;
+{     public class ExchangeOnHumanVendorRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 8093;
         public override ushort MessageId => Id;
 
         public long humanVendorId;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

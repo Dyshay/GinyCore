@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeMountFreeFromPaddockMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3489;
+{     public class ExchangeMountFreeFromPaddockMessage : NetworkMessage  
+    {         public  const ushort Id = 3867;
         public override ushort MessageId => Id;
 
         public string name;
@@ -65,11 +63,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

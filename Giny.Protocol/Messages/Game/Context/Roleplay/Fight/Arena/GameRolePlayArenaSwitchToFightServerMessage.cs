@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameRolePlayArenaSwitchToFightServerMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3780;
+{     public class GameRolePlayArenaSwitchToFightServerMessage : NetworkMessage  
+    {         public  const ushort Id = 3638;
         public override ushort MessageId => Id;
 
         public string address;
@@ -77,11 +75,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

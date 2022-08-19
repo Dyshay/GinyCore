@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightResultPvpData : FightResultAdditionalData  
-    { 
-        public new const ushort Id = 9448;
+{     public class FightResultPvpData : FightResultAdditionalData  
+    {         public new const ushort Id = 7334;
         public override ushort TypeId => Id;
 
         public byte grade;
@@ -89,11 +87,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

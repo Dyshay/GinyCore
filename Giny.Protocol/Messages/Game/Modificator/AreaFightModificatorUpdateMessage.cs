@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AreaFightModificatorUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2587;
+{     public class AreaFightModificatorUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 5646;
         public override ushort MessageId => Id;
 
         public int spellPairId;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

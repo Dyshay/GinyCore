@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class IgnoredAddRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5826;
+{     public class IgnoredAddRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 3626;
         public override ushort MessageId => Id;
 
         public AbstractPlayerSearchInformation target;
@@ -40,11 +38,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

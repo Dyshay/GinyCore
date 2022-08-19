@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BasicLatencyStatsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7345;
+{     public class BasicLatencyStatsMessage : NetworkMessage  
+    {         public  const ushort Id = 1605;
         public override ushort MessageId => Id;
 
         public short latency;
@@ -71,11 +69,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

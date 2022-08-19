@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AlmanachCalendarDateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8752;
+{     public class AlmanachCalendarDateMessage : NetworkMessage  
+    {         public  const ushort Id = 1972;
         public override ushort MessageId => Id;
 
         public int date;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

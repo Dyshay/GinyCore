@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class HouseInformationsForGuild : HouseInformations  
-    { 
-        public new const ushort Id = 8788;
+{     public class HouseInformationsForGuild : HouseInformations  
+    {         public new const ushort Id = 8800;
         public override ushort TypeId => Id;
 
         public int instanceId;
@@ -141,11 +139,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class HumanInformations  
-    { 
-        public const ushort Id = 4912;
+{     public class HumanInformations  
+    {         public const ushort Id = 8501;
         public virtual ushort TypeId => Id;
 
         public ActorRestrictionsInformations restrictions;
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

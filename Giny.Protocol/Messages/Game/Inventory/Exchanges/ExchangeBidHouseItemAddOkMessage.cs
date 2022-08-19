@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeBidHouseItemAddOkMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3308;
+{     public class ExchangeBidHouseItemAddOkMessage : NetworkMessage  
+    {         public  const ushort Id = 8315;
         public override ushort MessageId => Id;
 
         public ObjectItemToSellInBid itemInfo;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

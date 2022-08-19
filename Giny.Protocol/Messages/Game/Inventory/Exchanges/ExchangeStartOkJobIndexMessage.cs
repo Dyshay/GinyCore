@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeStartOkJobIndexMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7830;
+{     public class ExchangeStartOkJobIndexMessage : NetworkMessage  
+    {         public  const ushort Id = 7400;
         public override ushort MessageId => Id;
 
         public int[] jobs;
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeCraftCountRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1472;
+{     public class ExchangeCraftCountRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 7780;
         public override ushort MessageId => Id;
 
         public int count;
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

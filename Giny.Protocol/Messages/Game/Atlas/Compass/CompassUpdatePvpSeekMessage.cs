@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class CompassUpdatePvpSeekMessage : CompassUpdateMessage  
-    { 
-        public new const ushort Id = 8299;
+{     public class CompassUpdatePvpSeekMessage : CompassUpdateMessage  
+    {         public new const ushort Id = 5703;
         public override ushort MessageId => Id;
 
         public long memberId;
@@ -51,11 +49,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

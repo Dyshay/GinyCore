@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightRefreshFighterMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8487;
+{     public class GameFightRefreshFighterMessage : NetworkMessage  
+    {         public  const ushort Id = 8817;
         public override ushort MessageId => Id;
 
         public GameContextActorInformations informations;
@@ -36,11 +34,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

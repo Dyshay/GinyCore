@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GoldItem : Item  
-    { 
-        public new const ushort Id = 7805;
+{     public class GoldItem : Item  
+    {         public new const ushort Id = 4171;
         public override ushort TypeId => Id;
 
         public long sum;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MountInformationRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4913;
+{     public class MountInformationRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 7824;
         public override ushort MessageId => Id;
 
         public double id;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

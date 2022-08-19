@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PartyMemberEjectedMessage : PartyMemberRemoveMessage  
-    { 
-        public new const ushort Id = 1880;
+{     public class PartyMemberEjectedMessage : PartyMemberRemoveMessage  
+    {         public new const ushort Id = 2363;
         public override ushort MessageId => Id;
 
         public long kickerId;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

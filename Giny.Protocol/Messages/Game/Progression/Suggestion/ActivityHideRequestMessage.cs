@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ActivityHideRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4454;
+{     public class ActivityHideRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 8031;
         public override ushort MessageId => Id;
 
         public short activityId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

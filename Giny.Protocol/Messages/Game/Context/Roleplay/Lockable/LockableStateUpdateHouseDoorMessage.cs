@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class LockableStateUpdateHouseDoorMessage : LockableStateUpdateAbstractMessage  
-    { 
-        public new const ushort Id = 990;
+{     public class LockableStateUpdateHouseDoorMessage : LockableStateUpdateAbstractMessage  
+    {         public new const ushort Id = 5756;
         public override ushort MessageId => Id;
 
         public int houseId;
@@ -64,11 +62,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

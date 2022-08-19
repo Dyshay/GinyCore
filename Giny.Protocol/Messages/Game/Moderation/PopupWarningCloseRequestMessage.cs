@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class PopupWarningCloseRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2453;
+{     public class PopupWarningCloseRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 8676;
         public override ushort MessageId => Id;
 
 
@@ -26,11 +24,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

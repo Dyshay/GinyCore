@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeBidPriceForSellerMessage : ExchangeBidPriceMessage  
-    { 
-        public new const ushort Id = 2252;
+{     public class ExchangeBidPriceForSellerMessage : ExchangeBidPriceMessage  
+    {         public new const ushort Id = 7634;
         public override ushort MessageId => Id;
 
         public bool allIdentical;
@@ -18,7 +16,7 @@ namespace Giny.Protocol.Messages
         public ExchangeBidPriceForSellerMessage()
         {
         }
-        public ExchangeBidPriceForSellerMessage(bool allIdentical,long[] minimalPrices,short genericId,long averagePrice)
+        public ExchangeBidPriceForSellerMessage(bool allIdentical,long[] minimalPrices,int genericId,long averagePrice)
         {
             this.allIdentical = allIdentical;
             this.minimalPrices = minimalPrices;
@@ -64,11 +62,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

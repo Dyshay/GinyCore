@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ReloginTokenStatusMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6325;
+{     public class ReloginTokenStatusMessage : NetworkMessage  
+    {         public  const ushort Id = 6562;
         public override ushort MessageId => Id;
 
         public bool validToken;
@@ -50,11 +48,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

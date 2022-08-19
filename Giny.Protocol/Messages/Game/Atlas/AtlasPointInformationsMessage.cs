@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AtlasPointInformationsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5051;
+{     public class AtlasPointInformationsMessage : NetworkMessage  
+    {         public  const ushort Id = 1830;
         public override ushort MessageId => Id;
 
         public AtlasPointsInformations type;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

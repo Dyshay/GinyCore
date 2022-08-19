@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildBulletinSetErrorMessage : SocialNoticeSetErrorMessage  
-    { 
-        public new const ushort Id = 4748;
+{     public class GuildBulletinSetErrorMessage : SocialNoticeSetErrorMessage  
+    {         public new const ushort Id = 1878;
         public override ushort MessageId => Id;
 
 
@@ -32,11 +30,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

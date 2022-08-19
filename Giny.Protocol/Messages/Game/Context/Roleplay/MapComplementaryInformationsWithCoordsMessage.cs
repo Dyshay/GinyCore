@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MapComplementaryInformationsWithCoordsMessage : MapComplementaryInformationsDataMessage  
-    { 
-        public new const ushort Id = 8598;
+{     public class MapComplementaryInformationsWithCoordsMessage : MapComplementaryInformationsDataMessage  
+    {         public new const ushort Id = 6126;
         public override ushort MessageId => Id;
 
         public short worldX;
@@ -69,11 +67,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

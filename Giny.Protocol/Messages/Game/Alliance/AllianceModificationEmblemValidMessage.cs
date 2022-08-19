@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AllianceModificationEmblemValidMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7588;
+{     public class AllianceModificationEmblemValidMessage : NetworkMessage  
+    {         public  const ushort Id = 8527;
         public override ushort MessageId => Id;
 
         public GuildEmblem Alliancemblem;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

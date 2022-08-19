@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class AlignmentWarEffortInformation  
-    { 
-        public const ushort Id = 9705;
+{     public class AlignmentWarEffortInformation  
+    {         public const ushort Id = 8928;
         public virtual ushort TypeId => Id;
 
         public byte alignmentSide;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

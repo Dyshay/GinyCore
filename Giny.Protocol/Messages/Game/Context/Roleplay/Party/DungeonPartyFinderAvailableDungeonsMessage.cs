@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class DungeonPartyFinderAvailableDungeonsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1688;
+{     public class DungeonPartyFinderAvailableDungeonsMessage : NetworkMessage  
+    {         public  const ushort Id = 3434;
         public override ushort MessageId => Id;
 
         public short[] dungeonIds;
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

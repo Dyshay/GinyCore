@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class ActorOrientation  
-    { 
-        public const ushort Id = 6283;
+{     public class ActorOrientation  
+    {         public const ushort Id = 6951;
         public virtual ushort TypeId => Id;
 
         public double id;
@@ -50,11 +48,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

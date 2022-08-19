@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildLogbookInformationMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7468;
+{     public class GuildLogbookInformationMessage : NetworkMessage  
+    {         public  const ushort Id = 9577;
         public override ushort MessageId => Id;
 
         public GuildLogbookEntryBasicInformation[] globalActivities;
@@ -69,11 +67,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeObjectMoveKamaMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 200;
+{     public class ExchangeObjectMoveKamaMessage : NetworkMessage  
+    {         public  const ushort Id = 4570;
         public override ushort MessageId => Id;
 
         public long quantity;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

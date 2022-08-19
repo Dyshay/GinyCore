@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class DebtInformation  
-    { 
-        public const ushort Id = 149;
+{     public class DebtInformation  
+    {         public const ushort Id = 9455;
         public virtual ushort TypeId => Id;
 
         public double id;
@@ -55,11 +53,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

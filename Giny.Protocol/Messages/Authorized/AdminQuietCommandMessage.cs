@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AdminQuietCommandMessage : AdminCommandMessage  
-    { 
-        public new const ushort Id = 2793;
+{     public class AdminQuietCommandMessage : AdminCommandMessage  
+    {         public new const ushort Id = 6960;
         public override ushort MessageId => Id;
 
 
@@ -32,11 +30,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

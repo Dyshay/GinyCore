@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BasicStatMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2297;
+{     public class BasicStatMessage : NetworkMessage  
+    {         public  const ushort Id = 4091;
         public override ushort MessageId => Id;
 
         public double timeSpent;
@@ -52,11 +50,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangePodsModifiedMessage : ExchangeObjectMessage  
-    { 
-        public new const ushort Id = 3914;
+{     public class ExchangePodsModifiedMessage : ExchangeObjectMessage  
+    {         public new const ushort Id = 9809;
         public override ushort MessageId => Id;
 
         public int currentWeight;
@@ -60,11 +58,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class JobExperienceMultiUpdateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7895;
+{     public class JobExperienceMultiUpdateMessage : NetworkMessage  
+    {         public  const ushort Id = 8671;
         public override ushort MessageId => Id;
 
         public JobExperience[] experiencesUpdate;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

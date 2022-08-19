@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ClientYouAreDrunkMessage : DebugInClientMessage  
-    { 
-        public new const ushort Id = 367;
+{     public class ClientYouAreDrunkMessage : DebugInClientMessage  
+    {         public new const ushort Id = 5962;
         public override ushort MessageId => Id;
 
 
@@ -33,11 +31,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

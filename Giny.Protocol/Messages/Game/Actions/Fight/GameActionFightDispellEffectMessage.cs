@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameActionFightDispellEffectMessage : GameActionFightDispellMessage  
-    { 
-        public new const ushort Id = 3255;
+{     public class GameActionFightDispellEffectMessage : GameActionFightDispellMessage  
+    {         public new const ushort Id = 2039;
         public override ushort MessageId => Id;
 
         public int boostUID;
@@ -49,11 +47,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

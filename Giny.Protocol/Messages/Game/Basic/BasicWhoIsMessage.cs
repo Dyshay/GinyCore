@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BasicWhoIsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3406;
+{     public class BasicWhoIsMessage : NetworkMessage  
+    {         public  const ushort Id = 5367;
         public override ushort MessageId => Id;
 
         public bool self;
@@ -122,11 +120,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

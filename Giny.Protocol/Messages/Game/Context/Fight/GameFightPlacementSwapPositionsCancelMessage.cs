@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightPlacementSwapPositionsCancelMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4914;
+{     public class GameFightPlacementSwapPositionsCancelMessage : NetworkMessage  
+    {         public  const ushort Id = 7982;
         public override ushort MessageId => Id;
 
         public int requestId;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

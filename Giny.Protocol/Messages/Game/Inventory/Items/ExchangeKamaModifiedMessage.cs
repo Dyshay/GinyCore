@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeKamaModifiedMessage : ExchangeObjectMessage  
-    { 
-        public new const ushort Id = 4572;
+{     public class ExchangeKamaModifiedMessage : ExchangeObjectMessage  
+    {         public new const ushort Id = 6838;
         public override ushort MessageId => Id;
 
         public long quantity;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

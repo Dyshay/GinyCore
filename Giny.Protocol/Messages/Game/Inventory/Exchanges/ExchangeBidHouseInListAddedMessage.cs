@@ -6,14 +6,12 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeBidHouseInListAddedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7717;
+{     public class ExchangeBidHouseInListAddedMessage : NetworkMessage  
+    {         public  const ushort Id = 5794;
         public override ushort MessageId => Id;
 
         public int itemUID;
-        public short objectGID;
+        public int objectGID;
         public int objectType;
         public ObjectEffect[] effects;
         public long[] prices;
@@ -21,7 +19,7 @@ namespace Giny.Protocol.Messages
         public ExchangeBidHouseInListAddedMessage()
         {
         }
-        public ExchangeBidHouseInListAddedMessage(int itemUID,short objectGID,int objectType,ObjectEffect[] effects,long[] prices)
+        public ExchangeBidHouseInListAddedMessage(int itemUID,int objectGID,int objectType,ObjectEffect[] effects,long[] prices)
         {
             this.itemUID = itemUID;
             this.objectGID = objectGID;
@@ -37,7 +35,7 @@ namespace Giny.Protocol.Messages
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element objectGID.");
             }
 
-            writer.WriteVarShort((short)objectGID);
+            writer.WriteVarInt((int)objectGID);
             if (objectType < 0)
             {
                 throw new System.Exception("Forbidden value (" + objectType + ") on element objectType.");
@@ -69,7 +67,7 @@ namespace Giny.Protocol.Messages
             ObjectEffect _item4 = null;
             double _val5 = double.NaN;
             itemUID = (int)reader.ReadInt();
-            objectGID = (short)reader.ReadVarUhShort();
+            objectGID = (int)reader.ReadVarUhInt();
             if (objectGID < 0)
             {
                 throw new System.Exception("Forbidden value (" + objectGID + ") on element of ExchangeBidHouseInListAddedMessage.objectGID.");
@@ -108,11 +106,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

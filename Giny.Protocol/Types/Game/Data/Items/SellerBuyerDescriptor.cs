@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class SellerBuyerDescriptor  
-    { 
-        public const ushort Id = 632;
+{     public class SellerBuyerDescriptor  
+    {         public const ushort Id = 175;
         public virtual ushort TypeId => Id;
 
         public int[] quantities;
@@ -135,11 +133,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

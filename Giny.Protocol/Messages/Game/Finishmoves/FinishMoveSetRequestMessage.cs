@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class FinishMoveSetRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7408;
+{     public class FinishMoveSetRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 1542;
         public override ushort MessageId => Id;
 
         public int finishMoveId;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

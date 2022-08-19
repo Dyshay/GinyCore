@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class FocusedExchangeReadyMessage : ExchangeReadyMessage  
-    { 
-        public new const ushort Id = 4485;
+{     public class FocusedExchangeReadyMessage : ExchangeReadyMessage  
+    {         public new const ushort Id = 4943;
         public override ushort MessageId => Id;
 
         public int focusActionId;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class SystemMessageDisplayMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5519;
+{     public class SystemMessageDisplayMessage : NetworkMessage  
+    {         public  const ushort Id = 3007;
         public override ushort MessageId => Id;
 
         public bool hangUp;
@@ -64,11 +62,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

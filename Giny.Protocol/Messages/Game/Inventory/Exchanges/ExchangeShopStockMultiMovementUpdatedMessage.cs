@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeShopStockMultiMovementUpdatedMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4703;
+{     public class ExchangeShopStockMultiMovementUpdatedMessage : NetworkMessage  
+    {         public  const ushort Id = 6177;
         public override ushort MessageId => Id;
 
         public ObjectItemToSell[] objectInfoList;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

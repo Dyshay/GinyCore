@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class HavenBagFurnitureInformation  
-    { 
-        public const ushort Id = 3895;
+{     public class HavenBagFurnitureInformation  
+    {         public const ushort Id = 1008;
         public virtual ushort TypeId => Id;
 
         public short cellId;
@@ -59,11 +57,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

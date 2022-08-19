@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ContactLookMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 2975;
+{     public class ContactLookMessage : NetworkMessage  
+    {         public  const ushort Id = 9471;
         public override ushort MessageId => Id;
 
         public int requestId;
@@ -66,11 +64,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

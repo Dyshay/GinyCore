@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FriendSpouseOnlineInformations : FriendSpouseInformations  
-    { 
-        public new const ushort Id = 3147;
+{     public class FriendSpouseOnlineInformations : FriendSpouseInformations  
+    {         public new const ushort Id = 9569;
         public override ushort TypeId => Id;
 
         public double mapId;
@@ -77,11 +75,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

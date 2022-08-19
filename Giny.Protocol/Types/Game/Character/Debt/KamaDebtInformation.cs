@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class KamaDebtInformation : DebtInformation  
-    { 
-        public new const ushort Id = 5055;
+{     public class KamaDebtInformation : DebtInformation  
+    {         public new const ushort Id = 2773;
         public override ushort TypeId => Id;
 
         public long kamas;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ShowCellSpectatorMessage : ShowCellMessage  
-    { 
-        public new const ushort Id = 4547;
+{     public class ShowCellSpectatorMessage : ShowCellMessage  
+    {         public new const ushort Id = 5161;
         public override ushort MessageId => Id;
 
         public string playerName;
@@ -37,11 +35,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

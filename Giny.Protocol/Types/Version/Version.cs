@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class Version  
-    { 
-        public const ushort Id = 1212;
+{     public class Version  
+    {         public const ushort Id = 683;
         public virtual ushort TypeId => Id;
 
         public byte major;
@@ -92,11 +90,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PrismGeolocalizedInformation : PrismSubareaEmptyInfo  
-    { 
-        public new const ushort Id = 6582;
+{     public class PrismGeolocalizedInformation : PrismSubareaEmptyInfo  
+    {         public new const ushort Id = 1753;
         public override ushort TypeId => Id;
 
         public short worldX;
@@ -80,11 +78,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

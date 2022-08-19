@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameMapMovementRequestMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 6371;
+{     public class GameMapMovementRequestMessage : NetworkMessage  
+    {         public  const ushort Id = 917;
         public override ushort MessageId => Id;
 
         public short[] keyMovements;
@@ -70,11 +68,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

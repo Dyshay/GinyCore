@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class AlignmentWarEffortDonatePreviewMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9897;
+{     public class AlignmentWarEffortDonatePreviewMessage : NetworkMessage  
+    {         public  const ushort Id = 486;
         public override ushort MessageId => Id;
 
         public double xp;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

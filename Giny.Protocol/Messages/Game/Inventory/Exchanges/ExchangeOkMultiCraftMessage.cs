@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeOkMultiCraftMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8687;
+{     public class ExchangeOkMultiCraftMessage : NetworkMessage  
+    {         public  const ushort Id = 6286;
         public override ushort MessageId => Id;
 
         public long initiatorId;
@@ -61,11 +59,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

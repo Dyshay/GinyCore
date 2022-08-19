@@ -54,7 +54,7 @@ namespace Giny.World.Handlers.Approach
                     return;
                 }
 
-                client.Send(new CharacterCreationResultMessage((byte)CharacterCreationResultEnum.OK));
+                client.Send(new CharacterCreationResultMessage(result,(byte)CharacterCreationResultEnum.OK));
                 CreateCharacter(message, client, nextId);
             },
             delegate ()

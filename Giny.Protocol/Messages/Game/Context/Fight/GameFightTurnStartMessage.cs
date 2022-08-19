@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightTurnStartMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 575;
+{     public class GameFightTurnStartMessage : NetworkMessage  
+    {         public  const ushort Id = 9781;
         public override ushort MessageId => Id;
 
         public double id;
@@ -57,11 +55,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

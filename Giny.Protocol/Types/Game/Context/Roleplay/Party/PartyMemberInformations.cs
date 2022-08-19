@@ -4,17 +4,15 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PartyMemberInformations : CharacterBaseInformations  
-    { 
-        public new const ushort Id = 8826;
+{     public class PartyMemberInformations : CharacterBaseInformations  
+    {         public new const ushort Id = 6068;
         public override ushort TypeId => Id;
 
         public int lifePoints;
         public int maxLifePoints;
-        public short prospecting;
+        public int prospecting;
         public byte regenRate;
-        public short initiative;
+        public int initiative;
         public byte alignmentSide;
         public short worldX;
         public short worldY;
@@ -26,7 +24,7 @@ namespace Giny.Protocol.Types
         public PartyMemberInformations()
         {
         }
-        public PartyMemberInformations(int lifePoints,int maxLifePoints,short prospecting,byte regenRate,short initiative,byte alignmentSide,short worldX,short worldY,double mapId,short subAreaId,PlayerStatus status,PartyEntityBaseInformation[] entities,long id,string name,short level,EntityLook entityLook,byte breed,bool sex)
+        public PartyMemberInformations(int lifePoints,int maxLifePoints,int prospecting,byte regenRate,int initiative,byte alignmentSide,short worldX,short worldY,double mapId,short subAreaId,PlayerStatus status,PartyEntityBaseInformation[] entities,long id,string name,short level,EntityLook entityLook,byte breed,bool sex)
         {
             this.lifePoints = lifePoints;
             this.maxLifePoints = maxLifePoints;
@@ -67,7 +65,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + prospecting + ") on element prospecting.");
             }
 
-            writer.WriteVarShort((short)prospecting);
+            writer.WriteVarInt((int)prospecting);
             if (regenRate < 0 || regenRate > 255)
             {
                 throw new System.Exception("Forbidden value (" + regenRate + ") on element regenRate.");
@@ -79,7 +77,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + initiative + ") on element initiative.");
             }
 
-            writer.WriteVarShort((short)initiative);
+            writer.WriteVarInt((int)initiative);
             writer.WriteByte((byte)alignmentSide);
             if (worldX < -255 || worldX > 255)
             {
@@ -132,7 +130,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + maxLifePoints + ") on element of PartyMemberInformations.maxLifePoints.");
             }
 
-            prospecting = (short)reader.ReadVarUhShort();
+            prospecting = (int)reader.ReadVarUhInt();
             if (prospecting < 0)
             {
                 throw new System.Exception("Forbidden value (" + prospecting + ") on element of PartyMemberInformations.prospecting.");
@@ -144,7 +142,7 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + regenRate + ") on element of PartyMemberInformations.regenRate.");
             }
 
-            initiative = (short)reader.ReadVarUhShort();
+            initiative = (int)reader.ReadVarUhInt();
             if (initiative < 0)
             {
                 throw new System.Exception("Forbidden value (" + initiative + ") on element of PartyMemberInformations.initiative.");
@@ -192,11 +190,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

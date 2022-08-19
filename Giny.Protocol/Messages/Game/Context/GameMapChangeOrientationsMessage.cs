@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameMapChangeOrientationsMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 3831;
+{     public class GameMapChangeOrientationsMessage : NetworkMessage  
+    {         public  const ushort Id = 7035;
         public override ushort MessageId => Id;
 
         public ActorOrientation[] orientations;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

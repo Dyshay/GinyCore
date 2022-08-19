@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightTemporaryBoostEffect : AbstractFightDispellableEffect  
-    { 
-        public new const ushort Id = 4972;
+{     public class FightTemporaryBoostEffect : AbstractFightDispellableEffect  
+    {         public new const ushort Id = 9241;
         public override ushort TypeId => Id;
 
         public int delta;
@@ -40,11 +38,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

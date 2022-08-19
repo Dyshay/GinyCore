@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class BasicDateMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 4573;
+{     public class BasicDateMessage : NetworkMessage  
+    {         public  const ushort Id = 9259;
         public override ushort MessageId => Id;
 
         public byte day;
@@ -71,11 +69,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

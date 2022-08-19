@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class NotificationListMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 1912;
+{     public class NotificationListMessage : NetworkMessage  
+    {         public  const ushort Id = 8066;
         public override ushort MessageId => Id;
 
         public int[] flags;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

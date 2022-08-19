@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GameFightResumeSlaveInfo  
-    { 
-        public const ushort Id = 7784;
+{     public class GameFightResumeSlaveInfo  
+    {         public const ushort Id = 8704;
         public virtual ushort TypeId => Id;
 
         public double slaveId;
@@ -86,11 +84,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

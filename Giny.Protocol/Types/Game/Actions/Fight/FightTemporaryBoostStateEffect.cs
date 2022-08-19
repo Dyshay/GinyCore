@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightTemporaryBoostStateEffect : FightTemporaryBoostEffect  
-    { 
-        public new const ushort Id = 1892;
+{     public class FightTemporaryBoostStateEffect : FightTemporaryBoostEffect  
+    {         public new const ushort Id = 4223;
         public override ushort TypeId => Id;
 
         public short stateId;
@@ -41,11 +39,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

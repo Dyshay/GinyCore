@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class PrismInformation  
-    { 
-        public const ushort Id = 2401;
+{     public class PrismInformation  
+    {         public const ushort Id = 9724;
         public virtual ushort TypeId => Id;
 
         public byte typeId;
@@ -92,11 +90,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

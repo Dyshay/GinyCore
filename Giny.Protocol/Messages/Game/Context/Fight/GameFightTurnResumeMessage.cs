@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GameFightTurnResumeMessage : GameFightTurnStartMessage  
-    { 
-        public new const ushort Id = 1695;
+{     public class GameFightTurnResumeMessage : GameFightTurnStartMessage  
+    {         public new const ushort Id = 8146;
         public override ushort MessageId => Id;
 
         public int remainingTime;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

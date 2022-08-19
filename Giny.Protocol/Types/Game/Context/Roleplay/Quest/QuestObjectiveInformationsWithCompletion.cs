@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class QuestObjectiveInformationsWithCompletion : QuestObjectiveInformations  
-    { 
-        public new const ushort Id = 5684;
+{     public class QuestObjectiveInformationsWithCompletion : QuestObjectiveInformations  
+    {         public new const ushort Id = 62;
         public override ushort TypeId => Id;
 
         public short curCompletion;
@@ -60,11 +58,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

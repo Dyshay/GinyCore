@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildChangeMemberParametersMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9008;
+{     public class GuildChangeMemberParametersMessage : NetworkMessage  
+    {         public  const ushort Id = 4048;
         public override ushort MessageId => Id;
 
         public long memberId;
@@ -71,11 +69,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

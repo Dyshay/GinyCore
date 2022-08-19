@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ContactAddFailureMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8667;
+{     public class ContactAddFailureMessage : NetworkMessage  
+    {         public  const ushort Id = 8674;
         public override ushort MessageId => Id;
 
         public byte reason;
@@ -38,11 +36,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

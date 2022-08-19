@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class FightEntityDispositionInformations : EntityDispositionInformations  
-    { 
-        public new const ushort Id = 827;
+{     public class FightEntityDispositionInformations : EntityDispositionInformations  
+    {         public new const ushort Id = 2021;
         public override ushort TypeId => Id;
 
         public double carryingCharacterId;
@@ -45,11 +43,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

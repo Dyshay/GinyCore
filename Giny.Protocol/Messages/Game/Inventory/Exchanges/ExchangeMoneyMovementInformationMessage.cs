@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ExchangeMoneyMovementInformationMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 98;
+{     public class ExchangeMoneyMovementInformationMessage : NetworkMessage  
+    {         public  const ushort Id = 8515;
         public override ushort MessageId => Id;
 
         public long limit;
@@ -43,11 +41,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

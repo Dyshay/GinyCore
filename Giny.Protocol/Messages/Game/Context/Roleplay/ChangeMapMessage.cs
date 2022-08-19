@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ChangeMapMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 5275;
+{     public class ChangeMapMessage : NetworkMessage  
+    {         public  const ushort Id = 7638;
         public override ushort MessageId => Id;
 
         public double mapId;
@@ -47,11 +45,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

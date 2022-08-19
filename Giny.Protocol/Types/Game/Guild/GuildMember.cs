@@ -4,15 +4,14 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class GuildMember : CharacterMinimalInformations  
-    { 
-        public new const ushort Id = 9147;
+{     public class GuildMember : CharacterMinimalInformations  
+    {         public new const ushort Id = 6328;
         public override ushort TypeId => Id;
 
         public byte breed;
         public bool sex;
         public int rankId;
+        public double enrollmentDate;
         public long givenExperience;
         public byte experienceGivenPercent;
         public byte connected;
@@ -28,11 +27,12 @@ namespace Giny.Protocol.Types
         public GuildMember()
         {
         }
-        public GuildMember(byte breed,bool sex,int rankId,long givenExperience,byte experienceGivenPercent,byte connected,byte alignmentSide,short hoursSinceLastConnection,short moodSmileyId,int accountId,int achievementPoints,PlayerStatus status,bool havenBagShared,PlayerNote note,long id,string name,short level)
+        public GuildMember(byte breed,bool sex,int rankId,double enrollmentDate,long givenExperience,byte experienceGivenPercent,byte connected,byte alignmentSide,short hoursSinceLastConnection,short moodSmileyId,int accountId,int achievementPoints,PlayerStatus status,bool havenBagShared,PlayerNote note,long id,string name,short level)
         {
             this.breed = breed;
             this.sex = sex;
             this.rankId = rankId;
+            this.enrollmentDate = enrollmentDate;
             this.givenExperience = givenExperience;
             this.experienceGivenPercent = experienceGivenPercent;
             this.connected = connected;
@@ -62,6 +62,12 @@ namespace Giny.Protocol.Types
             }
 
             writer.WriteVarInt((int)rankId);
+            if (enrollmentDate < -9.00719925474099E+15 || enrollmentDate > 9.00719925474099E+15)
+            {
+                throw new System.Exception("Forbidden value (" + enrollmentDate + ") on element enrollmentDate.");
+            }
+
+            writer.WriteDouble((double)enrollmentDate);
             if (givenExperience < 0 || givenExperience > 9.00719925474099E+15)
             {
                 throw new System.Exception("Forbidden value (" + givenExperience + ") on element givenExperience.");
@@ -112,6 +118,12 @@ namespace Giny.Protocol.Types
                 throw new System.Exception("Forbidden value (" + rankId + ") on element of GuildMember.rankId.");
             }
 
+            enrollmentDate = (double)reader.ReadDouble();
+            if (enrollmentDate < -9.00719925474099E+15 || enrollmentDate > 9.00719925474099E+15)
+            {
+                throw new System.Exception("Forbidden value (" + enrollmentDate + ") on element of GuildMember.enrollmentDate.");
+            }
+
             givenExperience = (long)reader.ReadVarUhLong();
             if (givenExperience < 0 || givenExperience > 9.00719925474099E+15)
             {
@@ -150,8 +162,8 @@ namespace Giny.Protocol.Types
             }
 
             achievementPoints = (int)reader.ReadInt();
-            uint _id12 = (uint)reader.ReadUShort();
-            status = ProtocolTypeManager.GetInstance<PlayerStatus>((short)_id12);
+            uint _id13 = (uint)reader.ReadUShort();
+            status = ProtocolTypeManager.GetInstance<PlayerStatus>((short)_id13);
             status.Deserialize(reader);
             note = new PlayerNote();
             note.Deserialize(reader);
@@ -160,11 +172,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class GuildFightTakePlaceRequestMessage : GuildFightJoinRequestMessage  
-    { 
-        public new const ushort Id = 8088;
+{     public class GuildFightTakePlaceRequestMessage : GuildFightJoinRequestMessage  
+    {         public new const ushort Id = 559;
         public override ushort MessageId => Id;
 
         public long replacedCharacterId;
@@ -46,11 +44,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

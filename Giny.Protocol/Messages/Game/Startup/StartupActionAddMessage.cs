@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class StartupActionAddMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 9405;
+{     public class StartupActionAddMessage : NetworkMessage  
+    {         public  const ushort Id = 5938;
         public override ushort MessageId => Id;
 
         public StartupActionAddObject newAction;
@@ -34,11 +32,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

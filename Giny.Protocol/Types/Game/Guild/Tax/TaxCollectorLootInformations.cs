@@ -4,10 +4,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Types
-{ 
-    public class TaxCollectorLootInformations : TaxCollectorComplementaryInformations  
-    { 
-        public new const ushort Id = 1966;
+{     public class TaxCollectorLootInformations : TaxCollectorComplementaryInformations  
+    {         public new const ushort Id = 6864;
         public override ushort TypeId => Id;
 
         public long kamas;
@@ -85,11 +83,5 @@ namespace Giny.Protocol.Types
 
     }
 }
-
-
-
-
-
-
 
 

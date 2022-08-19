@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class MountRidingMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 8146;
+{     public class MountRidingMessage : NetworkMessage  
+    {         public  const ushort Id = 2038;
         public override ushort MessageId => Id;
 
         public bool isRiding;
@@ -40,11 +38,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 

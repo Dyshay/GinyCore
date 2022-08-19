@@ -6,10 +6,8 @@ using Giny.Protocol;
 using Giny.Protocol.Enums;
 
 namespace Giny.Protocol.Messages
-{ 
-    public class ServerOptionalFeaturesMessage : NetworkMessage  
-    { 
-        public  const ushort Id = 7447;
+{     public class ServerOptionalFeaturesMessage : NetworkMessage  
+    {         public  const ushort Id = 6290;
         public override ushort MessageId => Id;
 
         public int[] features;
@@ -56,11 +54,5 @@ namespace Giny.Protocol.Messages
 
     }
 }
-
-
-
-
-
-
 
 
