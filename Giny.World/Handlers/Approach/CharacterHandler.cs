@@ -161,6 +161,7 @@ namespace Giny.World.Handlers.Approach
             client.Send(new NotificationListMessage(new int[] { 2147483647 }));
             client.Send(new CharacterCapabilitiesMessage(4095));
             client.Send(new SequenceNumberRequestMessage());
+            client.Character.SendTitlesAndOrnamentsList();
 
             /*
              * -- Do not change order --

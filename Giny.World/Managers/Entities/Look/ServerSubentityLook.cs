@@ -10,24 +10,14 @@ namespace Giny.World.Managers.Entities.Look
 {
     public class ServerSubentityLook
     {
-        public SubEntityBindingPointCategoryEnum Category
-        {
-            get;
-            private set;
-        }
+        public SubEntityBindingPointCategoryEnum Category { get; private set; }
 
-        public byte BindingPointIndex
-        {
-            get;
-            private set;
-        }
+        public byte BindingPointIndex { get; private set; }
 
-        public ServerEntityLook SubActorLook
-        {
-            get;
-            set;
-        }
-        public ServerSubentityLook(SubEntityBindingPointCategoryEnum category, byte bindingPointIndex, ServerEntityLook subActorLook)
+        public ServerEntityLook SubActorLook { get; set; }
+
+        public ServerSubentityLook(SubEntityBindingPointCategoryEnum category, byte bindingPointIndex,
+            ServerEntityLook subActorLook)
         {
             this.Category = category;
             this.BindingPointIndex = bindingPointIndex;
@@ -36,7 +26,7 @@ namespace Giny.World.Managers.Entities.Look
 
         public SubEntity ToSubEntity()
         {
-            return new SubEntity((byte)Category, BindingPointIndex, SubActorLook.ToEntityLook());
+            return new SubEntity((byte) Category, BindingPointIndex, SubActorLook.ToEntityLook());
         }
 
         public ServerSubentityLook Clone()
